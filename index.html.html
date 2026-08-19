@@ -1,0 +1,2033 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline' 'unsafe-eval'; style-src 'unsafe-inline'; img-src 'self' data: blob:; connect-src 'none'; object-src 'none';">
+<title>AkromAI</title>
+<link rel="icon" type="image/png" href="data:image/png;base64,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">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+
+<style>
+:root{--bg:#0a0a0a;--side:#111;--side2:#1a1a1a;--border:#2a2a2a;--text:#ececec;--muted:#8a8a8a;--accent:#00d4aa;--user:#1f2a2a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Segoe UI,Roboto,Helvetica,Arial,sans-serif;background:var(--bg);color:var(--text);height:100vh;display:flex;overflow:hidden;overflow-x:hidden}
+.sidebar{width:280px;background:var(--side);border-right:1px solid var(--border);display:flex;flex-direction:column;padding:14px 12px;flex-shrink:0}
+.side-top{display:flex;align-items:center;gap:12px;padding:6px 8px 14px}
+.avatar{width:36px;height:36px;border-radius:8px;background:transparent;display:flex;align-items:center;justify-content:center;flex-shrink:0;overflow:hidden;padding:2px}
+.avatar img{width:100%;height:100%;object-fit:contain;display:block}
+.logo-big{width:64px;height:64px;border-radius:12px;background:transparent;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;overflow:hidden}
+.logo-big img{width:100%;height:100%;object-fit:contain;display:block}
+.brand-name{font-weight:600;font-size:1.05rem}
+.search-wrap{padding:0 4px 10px}
+.search-box{display:flex;align-items:center;gap:8px;background:var(--side2);border:1px solid var(--border);border-radius:10px;padding:9px 12px}
+.search-box input{flex:1;background:transparent;border:none;outline:none;color:var(--text);font-size:.9rem}
+.search-box span{color:var(--muted);font-size:.95rem}
+.nav-btn{width:100%;text-align:left;padding:11px 12px;margin-bottom:4px;border:none;border-radius:10px;background:transparent;color:var(--text);font-size:.92rem;cursor:pointer;display:flex;align-items:center;gap:10px}
+.nav-btn:hover{background:var(--side2)}
+.nav-btn.active{background:#1a2a28;color:var(--accent)}
+.nav-btn .ic{width:20px;text-align:center;opacity:.9}
+.section-label{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin:12px 8px 6px}
+.projects{max-height:120px;overflow-y:auto;margin-bottom:4px}
+.project-item{padding:9px 12px;border-radius:8px;font-size:.88rem;color:var(--muted);cursor:pointer;display:flex;align-items:center;gap:8px}
+.project-item:hover{background:var(--side2);color:var(--text)}
+.history{flex:1;overflow-y:auto;min-height:80px}
+.history-item{padding:9px 12px;border-radius:8px;font-size:.88rem;color:var(--muted);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:6px;margin-bottom:2px}
+.history-item:hover,.history-item.active{background:var(--side2);color:var(--text)}
+.history-item .title{flex:1;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.history-item .del{opacity:0;background:none;border:none;color:var(--muted);cursor:pointer;font-size:1rem}
+.history-item:hover .del{opacity:1}
+.side-bottom{border-top:1px solid var(--border);padding-top:10px;margin-top:8px}
+.main{flex:1;display:flex;flex-direction:column;min-width:0;overflow-x:hidden}
+.topbar{display:flex;align-items:center;justify-content:flex-end;padding:12px 18px;gap:10px}
+.lang-select{background:var(--side2);border:1px solid var(--border);color:var(--text);padding:7px 12px;border-radius:999px;font-size:.85rem;cursor:pointer}
+.chat{flex:1;overflow-y:auto;overflow-x:hidden;padding:20px 16px;display:flex;flex-direction:column;align-items:center}
+.chat-inner{width:100%;max-width:760px;display:flex;flex-direction:column;gap:18px;overflow-x:hidden}
+.welcome{text-align:center;margin:auto;padding:48px 16px}
+.welcome .logo-big{width:64px;height:64px;margin:0 auto 16px}
+.welcome h2{font-size:1.75rem;font-weight:500;margin-bottom:8px}
+.welcome p{color:var(--muted)}
+.message{width:100%;max-width:100%;line-height:1.55;font-size:.98rem;overflow-wrap:anywhere;word-break:break-word}
+.message.user{align-self:flex-end;max-width:85%;background:var(--user);padding:12px 16px;border-radius:16px 16px 4px 16px;overflow-wrap:anywhere;word-break:break-word}
+.message.ai .name{font-size:.8rem;color:var(--accent);margin-bottom:6px;font-weight:600;display:flex;align-items:center;gap:8px}
+.message.ai .name .dot{width:18px;height:18px;border-radius:0!important;background:transparent!important}
+.thinking{color:var(--muted);font-size:.9rem}
+.math-box,.code-box{background:#141414;border:1px solid var(--border);border-radius:10px;padding:12px;margin-top:8px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88rem;white-space:pre-wrap;overflow-x:auto}
+.composer-wrap{width:100%;max-width:760px;margin:0 auto;padding:8px 16px 18px}
+.composer{background:var(--side2);border:1px solid var(--border);border-radius:18px;padding:10px 12px;display:flex;align-items:flex-end;gap:8px}
+.composer textarea{flex:1;background:transparent;border:none;color:var(--text);font-size:1rem;resize:none;outline:none;max-height:140px;line-height:1.45;font-family:inherit;padding:6px 4px}
+.send-btn{width:36px;height:36px;border-radius:10px;border:none;background:var(--accent);color:#000;font-weight:700;cursor:pointer;font-size:1.1rem}
+.tool-btn{background:none;border:none;color:var(--muted);width:36px;height:36px;border-radius:8px;cursor:pointer;font-size:1.1rem}
+.tool-btn:hover{color:var(--text);background:#222}
+.file-preview{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+.file-chip{background:#1a1a1a;border:1px solid var(--border);padding:4px 10px;border-radius:999px;font-size:.8rem;display:flex;gap:6px;align-items:center}
+.file-chip button{background:none;border:none;color:var(--muted);cursor:pointer}
+.hint{text-align:center;font-size:.72rem;color:var(--muted);margin-top:8px}
+.speak-btn{margin-top:8px;background:transparent;border:1px solid var(--border);color:var(--muted);border-radius:999px;padding:4px 12px;font-size:.8rem;cursor:pointer;display:inline-flex;align-items:center;gap:6px}
+.speak-btn:hover{color:var(--accent);border-color:var(--accent)}
+.speak-btn.playing{color:var(--accent);border-color:var(--accent)}
+
+.nav-btn{justify-content:space-between}
+.nav-btn{justify-content:space-between}
+.nav-btn .chev{margin-left:auto;font-size:.75rem;color:var(--muted)}
+.submenu{margin-bottom:6px;display:none}
+.sub-btn{width:100%;text-align:left;padding:9px 12px 9px 40px;border:none;background:transparent;color:var(--muted);font-size:.86rem;cursor:pointer;border-radius:8px;display:flex;align-items:center;gap:8px}
+.sub-btn:hover{background:var(--side2);color:var(--text)}
+.sub-btn.active{color:var(--accent);background:#1a2a28}
+.projects,.history{scrollbar-width:none;-ms-overflow-style:none}
+.projects::-webkit-scrollbar,.history::-webkit-scrollbar{display:none}
+
+.sidebar{position:relative;transition:width .25s ease,margin .25s ease,padding .25s ease,opacity .25s}
+.sidebar.collapsed{width:0;padding:0;margin:0;border:none;overflow:hidden;opacity:0;pointer-events:none}
+.collapse-btn{position:absolute;top:14px;right:-14px;z-index:40;width:32px;height:32px;border-radius:10px;border:1px solid var(--border);background:#1a1a1a;color:#ececec;cursor:pointer;display:flex;align-items:center;justify-content:center;font-size:1rem;line-height:1;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.collapse-btn:hover{border-color:var(--accent);color:var(--accent)}
+.collapse-btn.floating{position:fixed;left:12px;top:16px;right:auto;z-index:50;background:#1a1a1a}
+.voice-box{margin:8px 4px 10px;padding:10px;background:var(--side2);border:1px solid var(--border);border-radius:10px}
+.voice-box .vb-title{font-size:.7rem;color:var(--muted);text-transform:uppercase;letter-spacing:.4px;margin-bottom:8px}
+.voice-opts{display:flex;gap:6px}
+.voice-opt{flex:1;padding:8px 6px;border-radius:8px;border:1px solid var(--border);background:transparent;color:var(--muted);cursor:pointer;font-size:.82rem}
+.voice-opt:hover{color:var(--text);border-color:#444}
+.voice-opt.active{background:#1a2a28;color:var(--accent);border-color:var(--accent)}
+@media(max-width:800px){.sidebar{display:none}.collapse-btn{display:none}}
+
+.api-bar{padding:8px 16px 12px;border-top:1px solid var(--border);background:#0f0f0f;display:flex;flex-wrap:wrap;gap:8px;align-items:center;max-width:760px;margin:0 auto;width:100%}
+.api-bar label{font-size:.8rem;color:var(--muted);white-space:nowrap}
+.api-bar input{flex:1;min-width:160px;background:var(--side2);border:1px solid var(--border);border-radius:10px;padding:8px 12px;color:var(--text);font-size:.85rem;outline:none}
+.api-bar button{background:var(--accent);color:#000;border:none;padding:8px 14px;border-radius:10px;font-weight:600;cursor:pointer;font-size:.85rem}
+.api-bar .st{font-size:.75rem;color:var(--muted)}
+.api-bar .st.on{color:var(--accent)}
+
+.message.ai .name .dot{width:18px;height:18px;border-radius:0!important;background:transparent!important;display:inline-flex;align-items:center;justify-content:center;overflow:visible;flex-shrink:0;border:none;padding:0;margin:0}
+.message.ai .name .dot img{width:18px;height:18px;object-fit:contain;display:block}
+.message.ai .name .dot.thinking-spin img{animation:boltPulse .8s ease-in-out infinite}
+@keyframes boltPulse{0%,100%{opacity:.5}50%{opacity:1}}
+.msg-actions{display:flex;flex-wrap:wrap;gap:2px;margin-top:10px;align-items:center}
+.msg-act{background:transparent;border:none;color:#8a8a8a;border-radius:999px;width:32px;height:32px;padding:0;cursor:pointer;display:inline-flex;align-items:center;justify-content:center}
+.msg-act:hover{color:var(--text);background:#222}
+.msg-act.on{color:var(--accent);background:#1a2a28}
+.msg-act.dis.on{color:#f66;background:#2a1a1a}
+.msg-act svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.send-btn:disabled{opacity:.5;cursor:wait}
+</style>
+</head>
+<body>
+<aside class="sidebar" id="sidebar">
+  <button type="button" class="collapse-btn" id="collapseBtn" title="Collapse">«</button>
+  <div class="side-top">
+    <div class="avatar"><img src="data:image/png;base64,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" alt="AkromAI"></div>
+    <div class="brand-name">AkromAI</div>
+  </div>
+  <div class="voice-box">
+    <div class="vb-title" id="lblVoice">Voice</div>
+    <div class="voice-opts">
+      <button type="button" class="voice-opt active" id="voiceMale" data-voice="male">♂ Male</button>
+      <button type="button" class="voice-opt" id="voiceAra" data-voice="ara">⚡ Ara</button>
+    </div>
+  </div>
+  <div class="search-wrap">
+    <div class="search-box">
+      <span>🔍</span>
+      <input type="text" id="searchInput" placeholder="Search">
+    </div>
+  </div>
+  <button class="nav-btn" id="newChatBtn"><span class="ic">＋</span> <span id="lblNew">New chat</span></button>
+  <button class="nav-btn" id="projectsBtn"><span class="ic">📁</span> <span id="lblProj">Projects</span></button>
+  <button class="nav-btn" id="mathBtn"><span class="ic">∑</span> <span id="lblMath">Math</span> <span class="chev" id="mathChev">▾</span></button>
+  <div class="submenu" id="mathSubmenu">
+    <button class="sub-btn" data-math="algebra">📐 <span id="lblAlgebra">Algebra</span></button>
+    <button class="sub-btn" data-math="math">🔢 <span id="lblMathSub">Matematika</span></button>
+  </div>
+  <button class="nav-btn" id="codeBtn"><span class="ic">{ }</span> <span id="lblCode">Code</span> <span class="chev" id="codeChev">▾</span></button>
+  <div class="submenu" id="codeSubmenu">
+    <button class="sub-btn" data-os="kali">🐉 Kali Linux</button>
+    <button class="sub-btn" data-os="macos">🍎 macOS</button>
+    <button class="sub-btn" data-os="windows">🪟 Windows</button>
+  </div>
+  <div class="section-label" id="lblProjectsSection">Projects</div>
+  <div class="projects" id="projectsList"></div>
+  <div class="section-label" id="lblHistory">History</div>
+  <div class="history" id="historyList"></div>
+  <div class="side-bottom">
+    <button class="nav-btn" id="uploadBtnSide"><span class="ic">📎</span> <span id="lblFile">File</span></button>
+  </div>
+</aside>
+<main class="main">
+  <div class="topbar">
+    <select class="lang-select" id="langSelect">
+      <option value="en">English</option>
+      <option value="uz">Oʻzbekcha</option>
+      <option value="ru">Русский</option>
+      <option value="tr">Türkçe</option>
+      <option value="kk">Қазақша</option>
+      <option value="ar">العربية</option>
+      <option value="pt">Português</option>
+      <option value="pt-BR">Português (Brasil)</option>
+      <option value="sw">Kiswahili</option>
+    </select>
+  </div>
+  <div class="chat" id="chat">
+    <div class="chat-inner" id="chatInner">
+      <div class="welcome" id="welcome">
+        <div class="logo-big"><img src="data:image/png;base64,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" alt="AkromAI"></div>
+        <h2 id="welcomeTitle">AkromAI</h2>
+        <p id="welcomeSub">Math • Code • Q&A</p>
+      </div>
+    </div>
+  </div>
+  <div class="composer-wrap">
+    <div class="file-preview" id="filePreview"></div>
+    <div class="composer">
+      <textarea id="userInput" rows="1" placeholder="Message AkromAI..."></textarea>
+      <button class="tool-btn" id="uploadBtn">📎</button>
+      <button class="send-btn" id="sendBtn">↑</button>
+    </div>
+    <div class="hint" id="hint">Creator: Akrom</div>
+  </div>
+  <input type="file" id="fileInput" accept="image/*,video/*,.txt,.md,.pdf" multiple style="display:none">
+</main>
+<script>
+function safeGet(k,d){try{return localStorage.getItem(k)||d}catch(e){return d}}
+function safeSet(k,v){try{localStorage.setItem(k,v)}catch(e){}}
+function safeGetChats(){try{return JSON.parse(localStorage.getItem('akrom_chats')||'[]')}catch(e){return[]}}
+function safeSetChats(d){try{localStorage.setItem('akrom_chats',JSON.stringify(d))}catch(e){}}
+function safeGetProjects(){try{return JSON.parse(localStorage.getItem('akrom_projects')||'[]')}catch(e){return[]}}
+function safeSetProjects(d){try{localStorage.setItem('akrom_projects',JSON.stringify(d))}catch(e){}}
+
+let currentLang=safeGet('akrom_lang','en');
+let apiKey='';
+let lmBase='';
+let useLM=false;
+let voiceGender=safeGet('akrom_voice','male');if(voiceGender==='female')voiceGender='ara';
+let sidebarCollapsed=false;
+let files=[],currentChatId=null,messages=[],chats=safeGetChats(),projects=safeGetProjects();
+
+const I18N={
+uz:{voice:'Ovoz',male:'Erkak',female:'Ayol',new:'Yangi chat',proj:'Proyektlar',math:'Matematika',code:'Kod',file:'Fayl',hist:'Tarix',projSec:'Proyektlar',search:'Qidiruv',ph:'AkromAI ga yozing...',hint:'Yaratuvchi: Akrom',wt:'Salom, men AkromAI',ws:'Matematika • Kod • Savol-javob',think:'s o‘ylayapman…',newT:'Yangi chat',emptyProj:'Proyekt yo‘q — “Proyektlar” ni bosing',algebra:'Algebra',mathSub:'Matematika'},
+en:{voice:'Voice',male:'Male',female:'Female',new:'New chat',proj:'Projects',math:'Math',code:'Code',file:'File',hist:'History',projSec:'Projects',search:'Search',ph:'Message AkromAI...',hint:'Creator: Akrom',wt:'Hi, I am AkromAI',ws:'Math • Code • Q&A',think:'s thinking…',newT:'New chat',emptyProj:'No projects — click Projects',algebra:'Algebra',mathSub:'Math'},
+ru:{voice:'Голос',male:'Муж',female:'Жен',new:'Новый чат',proj:'Проекты',math:'Математика',code:'Код',file:'Файл',hist:'История',projSec:'Проекты',search:'Поиск',ph:'Напишите AkromAI...',hint:'Создатель: Akrom',wt:'Привет, я AkromAI',ws:'Математика • Код • Вопросы',think:'с думаю…',newT:'Новый чат',emptyProj:'Нет проектов — нажмите Проекты',algebra:'Алгебра',mathSub:'Математика'},
+tr:{voice:'Ses',male:'Erkek',female:'Kadın',new:'Yeni sohbet',proj:'Projeler',math:'Matematik',code:'Kod',file:'Dosya',hist:'Geçmiş',projSec:'Projeler',search:'Ara',ph:'AkromAI’ye yazın...',hint:'Oluşturan: Akrom',wt:'Merhaba, ben AkromAI',ws:'Matematik • Kod • Soru-cevap',think:'s düşünüyor…',newT:'Yeni sohbet',emptyProj:'Proje yok — Projeler’e tıklayın',algebra:'Cebir',mathSub:'Matematik'},
+kk:{voice:'Дауыс',male:'Ер',female:'Әйел',new:'Жаңа чат',proj:'Жобалар',math:'Математика',code:'Код',file:'Файл',hist:'Тарих',projSec:'Жобалар',search:'Іздеу',ph:'AkromAI-ға жазыңыз...',hint:'Жасаушы: Akrom',wt:'Сәлем, мен AkromAI',ws:'Математика • Код • Сұрақ-жауап',think:'с ойлануда…',newT:'Жаңа чат',emptyProj:'Жоба жоқ',algebra:'Алгебра',mathSub:'Математика'},
+ar:{voice:'الصوت',male:'ذكر',female:'أنثى',new:'محادثة جديدة',proj:'المشاريع',math:'رياضيات',code:'برمجة',file:'ملف',hist:'السجل',projSec:'المشاريع',search:'بحث',ph:'اكتب إلى AkromAI...',hint:'المطور: Akrom',wt:'مرحبا، أنا AkromAI',ws:'رياضيات • برمجة • أسئلة',think:'ث يفكر…',newT:'محادثة جديدة',emptyProj:'لا مشاريع',algebra:'الجبر',mathSub:'رياضيات'},
+pt:{voice:'Voz',male:'Masculino',female:'Feminino',new:'Novo chat',proj:'Projetos',math:'Matemática',code:'Código',file:'Ficheiro',hist:'Histórico',projSec:'Projetos',search:'Pesquisar',ph:'Escreva ao AkromAI...',hint:'Criador: Akrom',wt:'Olá, eu sou o AkromAI',ws:'Matemática • Código • Perguntas',think:'s a pensar…',newT:'Novo chat',emptyProj:'Sem projetos — clique em Projetos',algebra:'Álgebra',mathSub:'Matemática'},
+'pt-BR':{voice:'Voz',male:'Masculino',female:'Feminino',new:'Novo chat',proj:'Projetos',math:'Matemática',code:'Código',file:'Arquivo',hist:'Histórico',projSec:'Projetos',search:'Buscar',ph:'Mensagem para o AkromAI...',hint:'Criador: Akrom',wt:'Oi, eu sou o AkromAI',ws:'Matemática • Código • Perguntas',think:'s pensando…',newT:'Novo chat',emptyProj:'Sem projetos — clique em Projetos',algebra:'Álgebra',mathSub:'Matemática'},
+sw:{voice:'Sauti',male:'Mwanaume',female:'Mwanamke',new:'Soga mpya',proj:'Miradi',math:'Hisabati',code:'Msimbo',file:'Faili',hist:'Historia',projSec:'Miradi',search:'Tafuta',ph:'Andika kwa AkromAI...',hint:'Muundaji: Akrom',wt:'Habari, mimi ni AkromAI',ws:'Hisabati • Msimbo • Maswali',think:'s ninafikiri…',newT:'Soga mpya',emptyProj:'Hakuna miradi — bofya Miradi',algebra:'Aljebra',mathSub:'Hisabati'}
+};
+function tUI(k){return (I18N[currentLang]||I18N.uz)[k]||I18N.uz[k]||k}
+
+const SPEECH_LANG={en:'en-US',uz:'uz-UZ',ru:'ru-RU',tr:'tr-TR',kk:'kk-KZ',ar:'ar-SA',pt:'pt-PT','pt-BR':'pt-BR',sw:'sw-KE'};
+function stripHtml(html){
+  const d=document.createElement('div');d.innerHTML=html;
+  return (d.textContent||d.innerText||'').replace(/\s+/g,' ').trim();
+}
+function speakText(text, btn){
+  if(!window.speechSynthesis){alert('Brauzer ovoz (TTS) ni qo‘llab-quvvatlamaydi');return}
+  if(window.speechSynthesis.speaking){
+    window.speechSynthesis.cancel();
+    if(btn)btn.classList.remove('playing');
+    return;
+  }
+  const u=new SpeechSynthesisUtterance(text);
+  const langCode=SPEECH_LANG[currentLang]||'en-US';
+  u.lang=langCode;
+  u.rate=0.95;u.pitch=0.85;u.volume=1; // pastroq pitch = erkakroq
+  const voices=window.speechSynthesis.getVoices();
+  const want=(langCode||'en').slice(0,2).toLowerCase();
+  const femaleRe=/female|woman|girl|zira|susan|samantha|karen|moira|tessa|veena|fiona|victoria|helen|hazel|linda|heather|catherine|anna|helena|alice|amelie|sara|melina|kyoko|yuna|google US English Female|microsoft.*(zira|susan)/i;
+  const maleRe=/male|man|boy|david|mark|daniel|george|james|thomas|alex|fred|jorge|diego|paulo|raul|miguel|arthur|thomas|google US English Male|microsoft.*(david|mark|george)|ravi|sean|lee|bahasa/i;
+  function score(v){
+    let s=0;
+    const name=(v.name||'')+' '+(v.voiceURI||'');
+    const lang=(v.lang||'').toLowerCase();
+    if(lang.indexOf(want)===0)s+=10;
+    else if(lang.indexOf('en')===0)s+=3;
+    if(voiceGender==='male'){
+      if(maleRe.test(name))s+=12;
+      if(femaleRe.test(name))s-=12;
+      if(/male/i.test(name))s+=5;
+      u.pitch=0.85;
+    }else{
+      if(femaleRe.test(name))s+=12;
+      if(maleRe.test(name))s-=12;
+      if(/female/i.test(name))s+=5;
+      u.pitch=1.1;
+    }
+    return s;
+  }
+  let best=null,bestS=-999;
+  voices.forEach(function(v){
+    const sc=score(v);
+    if(sc>bestS){bestS=sc;best=v}
+  });
+  if(best){u.voice=best;u.lang=best.lang||langCode}
+  u.onstart=function(){if(btn)btn.classList.add('playing')};
+  u.onend=function(){if(btn)btn.classList.remove('playing')};
+  u.onerror=function(){if(btn)btn.classList.remove('playing')};
+  window.speechSynthesis.speak(u);
+}
+// Chrome sometimes loads voices async
+if(window.speechSynthesis)window.speechSynthesis.onvoiceschanged=function(){};
+
+
+
+const chatEl=document.getElementById('chat'),chatInner=document.getElementById('chatInner'),welcome=document.getElementById('welcome');
+const userInput=document.getElementById('userInput'),sendBtn=document.getElementById('sendBtn');
+const newChatBtn=document.getElementById('newChatBtn'),projectsBtn=document.getElementById('projectsBtn');
+const mathBtn=document.getElementById('mathBtn'),codeBtn=document.getElementById('codeBtn');
+const mathSubmenu=document.getElementById('mathSubmenu'),codeSubmenu=document.getElementById('codeSubmenu');
+let currentOS=null,currentMathMode=null;
+const uploadBtn=document.getElementById('uploadBtn'),uploadBtnSide=document.getElementById('uploadBtnSide');
+const fileInput=document.getElementById('fileInput'),filePreview=document.getElementById('filePreview');
+const historyList=document.getElementById('historyList'),projectsList=document.getElementById('projectsList');
+const langSelect=document.getElementById('langSelect'),searchInput=document.getElementById('searchInput');
+
+function applyLang(){
+  currentLang=langSelect.value;safeSet('akrom_lang',currentLang);
+  document.documentElement.lang=currentLang;document.documentElement.dir='ltr'; /* arabcha ham LTR — ekran o‘zgarmaydi */
+  document.getElementById('lblNew').textContent=tUI('new');
+  document.getElementById('lblProj').textContent=tUI('proj');
+  document.getElementById('lblMath').textContent=tUI('math');
+  document.getElementById('lblCode').textContent=tUI('code');
+  document.getElementById('lblFile').textContent=tUI('file');
+  document.getElementById('lblHistory').textContent=tUI('hist');
+  document.getElementById('lblProjectsSection').textContent=tUI('projSec');
+  var la=document.getElementById('lblAlgebra');if(la)la.textContent=tUI('algebra');
+  var lm=document.getElementById('lblMathSub');if(lm)lm.textContent=tUI('mathSub');
+  searchInput.placeholder=tUI('search');
+  userInput.placeholder=tUI('ph');
+  document.getElementById('hint').textContent=tUI('hint');
+  const wt=document.getElementById('welcomeTitle');if(wt)wt.textContent=tUI('wt');
+  const ws=document.getElementById('welcomeSub');if(ws)ws.textContent=tUI('ws');
+  const lv=document.getElementById('lblVoice');if(lv)lv.textContent=tUI('voice')||'Voice';
+  const vm=document.getElementById('voiceMale');if(vm)vm.innerHTML='♂ '+(tUI('male')||'Male');
+  renderProjects();renderHistory();
+}
+langSelect.value=currentLang;langSelect.onchange=applyLang;
+
+function saveChats(){safeSetChats(chats);renderHistory()}
+function renderHistory(filter){
+  historyList.innerHTML='';
+  const q=(filter||searchInput.value||'').toLowerCase();
+  chats.slice().reverse().forEach(function(c){
+    if(q&&!(c.title||'').toLowerCase().includes(q))return;
+    const div=document.createElement('div');
+    div.className='history-item'+(c.id===currentChatId?' active':'');
+    div.innerHTML='<span class="title">'+(c.title||tUI('newT'))+'</span><button class="del">×</button>';
+    div.querySelector('.title').onclick=function(){loadChat(c.id)};
+    div.querySelector('.del').onclick=function(e){e.stopPropagation();chats=chats.filter(function(x){return x.id!==c.id});if(currentChatId===c.id)startNewChat();saveChats()};
+    historyList.appendChild(div);
+  });
+}
+function renderProjects(){
+  projectsList.innerHTML='';
+  if(!projects.length){const d=document.createElement('div');d.className='project-item';d.style.cursor='default';d.textContent=tUI('emptyProj');projectsList.appendChild(d);return}
+  projects.forEach(function(p,i){
+    const div=document.createElement('div');div.className='project-item';
+    div.innerHTML='<span>📌</span><span style="flex:1">'+escapeHtml(p.name)+'</span>';
+    div.onclick=function(){userInput.value=p.name;userInput.focus()};
+    projectsList.appendChild(div);
+  });
+}
+function startNewChat(){
+  currentChatId=null;messages=[];chatInner.innerHTML='';chatInner.appendChild(welcome);
+  files=[];renderFilePreview();userInput.value='';userInput.style.height='auto';renderHistory();
+}
+function loadChat(id){
+  const c=chats.find(function(x){return x.id===id});if(!c)return;
+  currentChatId=id;messages=c.messages||[];chatInner.innerHTML='';
+  messages.forEach(function(m){addMessage(m.content,m.role==='user',false)});renderHistory();
+}
+function addToHistory(userText){
+  if(!currentChatId){currentChatId=Date.now().toString();chats.push({id:currentChatId,title:(userText||tUI('newT')).slice(0,40),messages:[]});}
+  const c=chats.find(function(x){return x.id===currentChatId});c.messages=messages;
+  if((!c.title||c.title===tUI('newT'))&&userText)c.title=userText.slice(0,40);saveChats();
+}
+function addMessage(content,isUser,save){
+  if(save===undefined)save=true;
+  try{if(welcome&&welcome.parentNode)welcome.remove()}catch(e){}
+  var div=document.createElement('div');
+  div.className='message '+(isUser?'user':'ai');
+  if(isUser){
+    div.innerHTML=content;
+  }else{
+    var boltSrc='';
+    try{var im=document.querySelector('.avatar img');if(im)boltSrc=im.src}catch(e){}
+    var boltImg=boltSrc?('<img style="width:18px;height:18px;object-fit:contain;display:block" src="'+boltSrc+'" alt="">'):'';
+    div.innerHTML='<div class="name"><span class="dot">'+boltImg+'</span>AkromAI</div><div class="ai-body">'+(content||'')+'</div>';
+    try{
+      var actions=document.createElement('div');
+      actions.className='msg-actions';
+      function mk(svg,title,cls){
+        var b=document.createElement('button');
+        b.type='button';b.className='msg-act'+(cls?(' '+cls):'');
+        b.title=title;b.innerHTML=svg;return b;
+      }
+      var ic={
+        copy:'<svg viewBox="0 0 24 24"><rect x="9" y="9" width="11" height="11" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></svg>',
+        share:'<svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>',
+        like:'<svg viewBox="0 0 24 24"><path d="M7 22V11M2 13.5V20a2 2 0 0 0 2 2h12.4a2 2 0 0 0 1.95-1.55L20 11h-5V5a2 2 0 0 0-2-2h0a2.5 2.5 0 0 0-2.4 1.8L9 11H4a2 2 0 0 0-2 2.5z"/></svg>',
+        dislike:'<svg viewBox="0 0 24 24"><path d="M17 2v11M22 10.5V4a2 2 0 0 0-2-2H7.6a2 2 0 0 0-1.95 1.55L4 13h5v6a2 2 0 0 0 2 2h0a2.5 2.5 0 0 0 2.4-1.8L15 13h5a2 2 0 0 0 2-2.5z"/></svg>',
+        regen:'<svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-2.6-6.2"/><path d="M21 3v6h-6"/></svg>',
+        speak:'<svg viewBox="0 0 24 24"><path d="M11 5L6 9H2v6h4l5 4V5z"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>'
+      };
+      var bCopy=mk(ic.copy,'Copy');
+      bCopy.onclick=function(){
+        var tx=stripHtml(content).replace(/\s+/g,' ').trim();
+        try{navigator.clipboard.writeText(tx)}catch(e){prompt('Copy:',tx)}
+      };
+      var bShare=mk(ic.share,'Share');
+      bShare.onclick=function(){
+        var tx=stripHtml(content).replace(/\s+/g,' ').trim();
+        try{if(navigator.share)navigator.share({title:'AkromAI',text:tx});else navigator.clipboard.writeText(tx)}catch(e){}
+      };
+      var bLike=mk(ic.like,'Like');
+      var bDis=mk(ic.dislike,'Dislike','dis');
+      bLike.onclick=function(){bLike.classList.toggle('on');bDis.classList.remove('on')};
+      bDis.onclick=function(){bDis.classList.toggle('on');bLike.classList.remove('on')};
+      var bRegen=mk(ic.regen,'Regenerate');
+      bRegen.onclick=function(){
+        try{
+          var prev=null;
+          for(var k=messages.length-1;k>=0;k--){if(messages[k].role==='user'){prev=messages[k].content;break}}
+          if(!prev)return;
+          var plainU=stripHtml(prev).replace(/📎/g,'').trim();
+          if(!plainU)return;
+          var local=(typeof getQuickFacts==='function'&&getQuickFacts(plainU))||trySolveMath(plainU)||getOSCodeReply(plainU)||getCodeReply(plainU)||generateReply(plainU);
+          addMessage(local,false);
+        }catch(e){}
+      };
+      var bSpeak=mk(ic.speak,'Speak');
+      bSpeak.onclick=function(){try{speakText(content,bSpeak)}catch(e){}};
+      actions.appendChild(bCopy);actions.appendChild(bShare);
+      actions.appendChild(bLike);actions.appendChild(bDis);
+      actions.appendChild(bRegen);actions.appendChild(bSpeak);
+      div.appendChild(actions);
+    }catch(e){}
+  }
+  try{
+    if(chatInner)chatInner.appendChild(div);
+    if(typeof chatEl!=='undefined'&&chatEl)chatEl.scrollTop=chatEl.scrollHeight;
+  }catch(e){}
+  if(save){try{messages.push({role:isUser?'user':'assistant',content:content})}catch(e){}}
+}
+
+
+function escapeHtml(t){const d=document.createElement('div');d.textContent=t;return d.innerHTML}
+function showThinking(sec){
+  sec=sec||2;return new Promise(function(resolve){
+    const div=document.createElement('div');div.className='message ai';
+    var boltSrc='';try{var im=document.querySelector('.avatar img');if(im)boltSrc=im.src}catch(e){}
+    var boltImg=boltSrc?('<img style="width:18px;height:18px;object-fit:contain" src="'+boltSrc+'" alt="">'):'';
+    div.innerHTML='<div class="name"><span class="dot thinking-spin">'+boltImg+'</span>AkromAI</div><div class="thinking"><span class="sec">0</span>'+tUI('think')+'</div>';
+    if(chatInner)chatInner.appendChild(div);if(typeof chatEl!=='undefined'&&chatEl)chatEl.scrollTop=chatEl.scrollHeight;
+    let s=0;const iv=setInterval(function(){s++;const el=div.querySelector('.sec');if(el)el.textContent=s;if(s>=sec){clearInterval(iv);try{div.remove()}catch(e){}resolve()}},400);
+  });
+}
+
+const numMap={
+  'nol':0,'bir':1,'ikki':2,'uch':3,'tort':4,"to'rt":4,'besh':5,'olti':6,'yetti':7,'sakkiz':8,'toqqiz':9,"to'qqiz":9,
+  'on':10,"o'n":10,'un':10,'onbir':11,'onikki':12,'onuch':13,'ontort':14,'onbesh':15,'onbeshni':15,'unbesh':15,'unbeshni':15,
+  'yigirma':20,'yigirmaga':20,'ottiz':30,"o'ttiz":30,'qirq':40,'ellik':50,'oltmish':60,'yetmish':70,'sakson':80,'toqson':90,'yuz':100,'ming':1000,
+  'zero':0,'one':1,'two':2,'three':3,'four':4,'five':5,'six':6,'seven':7,'eight':8,'nine':9,
+  'ten':10,'eleven':11,'twelve':12,'thirteen':13,'fourteen':14,'fifteen':15,'sixteen':16,'seventeen':17,'eighteen':18,'nineteen':19,
+  'twenty':20,'thirty':30,'forty':40,'fifty':50,'sixty':60,'seventy':70,'eighty':80,'ninety':90,'hundred':100,
+  'один':1,'два':2,'три':3,'четыре':4,'пять':5,'шесть':6,'семь':7,'восемь':8,'девять':9,
+  'десять':10,'пятнадцать':15,'двадцать':20,'тридцать':30,'сто':100
+};
+function normalize(t){return t.toLowerCase().replace(/[ʼ‘’`']/g,"'").replace(/,/g,'.').replace(/\s+/g,' ').trim()}
+function wordsToNumber(text){
+  let t=normalize(text).replace(/(ni|ny|nı|ga|ka|ни|ны|га)$/,'');
+  if(numMap[t]!==undefined)return numMap[t];
+  const ns=t.replace(/\s/g,'');
+  if(numMap[ns]!==undefined)return numMap[ns];
+  const parts=t.split(' ');
+  if(parts.length===2){
+    let a=numMap[parts[0]],b=numMap[parts[1]];
+    if(a===undefined)a=numMap[parts[0].replace(/(ni|ga|ka)$/,'')];
+    if(b===undefined)b=numMap[parts[1].replace(/(ni|ga|ka)$/,'')];
+    if(a!==undefined&&b!==undefined){
+      if(a>=20&&a%10===0&&b<10)return a+b;
+      if(a===10&&b<10)return a+b;
+    }
+  }
+  if(/^\d+(\.\d+)?$/.test(t))return parseFloat(t);
+  return null;
+}
+function extractNumbersAndOp(text){
+  const t=normalize(text);
+  let op=null;
+  if(/kosh|qosh|qo'?sh|plus|\+|artı|добав|сложи/i.test(t))op='+';
+  else if(/ayir|minus|\-|ayır|вычт/i.test(t))op='-';
+  else if(/kopaytir|ko'?paytir|multiply|\*|×|умнож|çarp/i.test(t))op='*';
+  else if(/bol|bo'?l|divide|÷|\/|раздел|böl/i.test(t))op='/';
+  // Also split patterns like 2+2, 12*8
+  const glued=t.match(/(-?\d+(?:\.\d+)?)\s*([\+\-\*\/×÷])\s*(-?\d+(?:\.\d+)?)/);
+  if(glued){
+    const o={'+':'+','-':'-','*':'*','×':'*','/':'/','÷':'/'}[glued[2]];
+    return{a:parseFloat(glued[1]),b:parseFloat(glued[3]),op:o};
+  }
+  const tokens=t.split(/\s+/).filter(Boolean);
+  const nums=[];
+  for(let i=0;i<tokens.length;i++){
+    let token=tokens[i];
+    let clean=token.replace(/(ni|ny|nı|ga|ka)$/,'');
+    let n=wordsToNumber(clean);
+    if(n===null)n=wordsToNumber(token);
+    if(n===null){
+      for(const key of Object.keys(numMap)){
+        if(key.length>=3&&(token.indexOf(key)===0||clean.indexOf(key)===0)){n=numMap[key];break}
+      }
+    }
+    if(n!==null)nums.push(n);
+  }
+  if(nums.length>=2&&op)return{a:nums[0],b:nums[1],op:op};
+  return null;
+}
+function safeCalc(expr){
+  expr=String(expr).replace(/\s+/g,'').replace(/×/g,'*').replace(/÷/g,'/').replace(/\^/g,'**');
+  if(!/^[\d\.\+\-\*\/\(\)\*]+$/.test(expr.replace(/\*\*/g,'')))return null;
+  // simple recursive descent for + - * / and **
+  try{
+    let i=0;
+    function peek(){return expr[i]}
+    function eat(){return expr[i++]}
+    function num(){
+      let s='';
+      if(peek()==='+'||peek()==='-')s+=eat();
+      while(peek()&&/[\d\.]/.test(peek()))s+=eat();
+      const n=parseFloat(s);
+      if(isNaN(n))throw new Error('num');
+      return n;
+    }
+    function factor(){
+      if(peek()==='('){eat();const v=exprSum();if(peek()===')')eat();return v}
+      return num();
+    }
+    function power(){
+      let v=factor();
+      while(expr.slice(i,i+2)==='**'){i+=2;v=Math.pow(v,factor())}
+      return v;
+    }
+    function term(){
+      let v=power();
+      while(peek()==='*'||peek()==='/'){const o=eat();const r=power();v=o==='*'?v*r:v/r}
+      return v;
+    }
+    function exprSum(){
+      let v=term();
+      while(peek()==='+'||peek()==='-'){const o=eat();const r=term();v=o==='+'?v+r:v-r}
+      return v;
+    }
+    const r=exprSum();
+    if(i!==expr.length)return null;
+    return r;
+  }catch(e){return null}
+}
+function trySolveMath(text){
+  const original=text;
+  const t=normalize(text).replace(/×/g,'*').replace(/÷/g,'/');
+  const wc=extractNumbersAndOp(text);
+  if(wc){
+    let r=null;
+    if(wc.op==='+')r=wc.a+wc.b;
+    else if(wc.op==='-')r=wc.a-wc.b;
+    else if(wc.op==='*')r=wc.a*wc.b;
+    else if(wc.op==='/'&&wc.b)r=wc.a/wc.b;
+    if(r!==null&&isFinite(r)){
+      const s={'+':'+','-':'-','*':'×','/':'÷'}[wc.op];
+      return '<strong>Math:</strong><br><div class="math-box">"'+escapeHtml(original)+'"\n\n'+wc.a+' '+s+' '+wc.b+' = <strong>'+(Math.round(r*1e6)/1e6)+'</strong></div>';
+    }
+  }
+  const pure=t.replace(/\s+/g,'');
+  if(/^[\d\.\+\-\*\/\^\(\)×÷]+$/.test(pure)||/sqrt|pi|π/.test(t)){
+    let expr=pure.replace(/π|pi/g,'3.141592653589793');
+    // sqrt(n)
+    expr=expr.replace(/sqrt\(([^)]+)\)/g,function(_,x){const v=safeCalc(x);return v!==null?String(Math.sqrt(v)):_});
+    const r=safeCalc(expr);
+    if(r!==null&&isFinite(r))
+      return '<strong>Math:</strong><br><div class="math-box">'+escapeHtml(original)+'\n\n= <strong>'+(Math.round(r*1e6)/1e6)+'</strong></div>';
+  }
+  const eq=t.match(/^([0-9\.\s\+\-\*xх]+)\s*=\s*([0-9\.\s\+\-]+)$/i);
+  if(eq){
+    try{
+      let L=eq[1].replace(/x|х/gi,'x').replace(/\s+/g,''),R=parseFloat(eq[2].replace(/\s+/g,''));
+      let a=0,b=0,m=L.match(/^([+-]?\d*\.?\d*)x([+-]\d+\.?\d*)$/);
+      if(m){a=m[1]===''||m[1]==='+'?1:m[1]==='-'?-1:parseFloat(m[1]);b=parseFloat(m[2]);}
+      else{m=L.match(/^x([+-]\d+\.?\d*)$/);if(m){a=1;b=parseFloat(m[1]);}
+      else{m=L.match(/^([+-]?\d*\.?\d*)x$/);if(m){a=m[1]===''||m[1]==='+'?1:m[1]==='-'?-1:parseFloat(m[1]);}
+      else if(L==='x')a=1;}}
+      if(a){
+        const x=(R-b)/a;
+        return '<strong>Algebra:</strong><br><div class="math-box">'+escapeHtml(original)+'\n\n'+a+'x '+(b>=0?'+ '+b:'- '+Math.abs(b))+' = '+R+'\nx = <strong>'+(Math.round(x*1e6)/1e6)+'</strong></div>';
+      }
+    }catch(e){}
+  }
+  const perc=t.match(/(\d+(?:\.\d+)?)\s*%\s*(?:of|dan|от)?\s*(\d+(?:\.\d+)?)/i);
+  if(perc){
+    const val=(parseFloat(perc[1])/100)*parseFloat(perc[2]);
+    return '<strong>Math:</strong><br><div class="math-box">'+escapeHtml(original)+'\n\n= <strong>'+(Math.round(val*1e6)/1e6)+'</strong></div>';
+  }
+  return null;
+}
+function getCodeReply(text){
+  const t=text.toLowerCase();
+  if(/html\s*nima|what is html|html\s*это|html\s*nedir/i.test(t)||(t.includes('html')&&(/nima|what|это|nedir/.test(t))))
+    return '<strong>HTML</strong><br><div class="code-box">&lt;!DOCTYPE html&gt;\n&lt;html&gt;\n&lt;body&gt;\n  &lt;h1&gt;Hello&lt;/h1&gt;\n&lt;/body&gt;\n&lt;/html&gt;</div>';
+  if(/css\s*nima|what is css|css\s*nedir/i.test(t)||(t.includes('css')&&(/nima|what|nedir/.test(t))))
+    return '<strong>CSS</strong><div class="code-box">body { background:#0a0a0a; color:#fff; }\n.btn { padding:10px 16px; border-radius:8px; }</div>';
+  if(/javascript|js\s*nima|what is js/i.test(t)&&(/nima|what|это|nedir|kod|code/.test(t)||t==='javascript'||t==='js'))
+    return '<strong>JavaScript</strong><div class="code-box">function hi(name){ return "Hello, "+name; }\nconsole.log(hi("Akrom"));</div>';
+  if(/python/i.test(t)&&(/nima|what|kod|code|nedir|это/.test(t)||t.trim()==='python'))
+    return '<strong>Python</strong><div class="code-box">def hi(name):\n    return f"Hello, {name}"\nprint(hi("Akrom"))</div>';
+  if(/css\s*anim|animatsiya|keyframes|animation/i.test(t))
+    return '<strong>CSS animation</strong><div class="code-box">@keyframes pulse {\n  50% { transform: scale(1.1); }\n}\n.box { animation: pulse 1s infinite; }</div>';
+  if(/kod\s*yoz|code\s*example|script\s*yoz/i.test(t))
+    return 'HTML / CSS / JS / Python — qaysi biri kerak?';
+  return null;
+}
+const OS_CMDS={
+  kali:{
+    'nmap':{uz:"Tarmoqni skanerlash vositasi. Masalan: <code>nmap -sV 192.168.1.1</code> — ochiq portlar va xizmatlarni topadi.",en:"Network scanning tool. E.g. <code>nmap -sV 192.168.1.1</code> — finds open ports and services.",ru:"Инструмент сканирования сети. Напр. <code>nmap -sV 192.168.1.1</code> — находит открытые порты и службы."},
+    'sqlmap':{uz:"SQL in'ektsiya zaifliklarini avtomatik aniqlash va sinash vositasi.",en:"Automatic SQL injection detection and exploitation tool.",ru:"Инструмент автоматического обнаружения и эксплуатации SQL-инъекций."},
+    'metasploit':{uz:"Ekspluatatsiya freymvorki — <code>msfconsole</code> buyrug'i bilan ishga tushiriladi.",en:"Exploitation framework — launched with <code>msfconsole</code>.",ru:"Фреймворк для эксплуатации — запускается командой <code>msfconsole</code>."},
+    'aircrack-ng':{uz:"Wi-Fi xavfsizligini tekshirish vositalari to'plami.",en:"Suite of Wi-Fi security auditing tools.",ru:"Набор инструментов для аудита безопасности Wi-Fi."},
+    'john':{uz:"John the Ripper — parol xeshlarini tiklash/tekshirish vositasi.",en:"John the Ripper — password hash cracking/testing tool.",ru:"John the Ripper — инструмент для взлома/проверки хешей паролей."},
+    'hydra':{uz:"Login/parolni ko'p urinish (brute-force) orqali sinovdan o'tkazish vositasi.",en:"Login/password brute-force testing tool.",ru:"Инструмент проверки логина/пароля методом перебора (brute-force)."},
+    'wireshark':{uz:"Tarmoq trafigini ushlab, batafsil tahlil qiladigan dastur.",en:"Captures and analyzes network traffic in detail.",ru:"Перехватывает и подробно анализирует сетевой трафик."},
+    'burpsuite':{uz:"Veb-ilovalar xavfsizligini tekshirish uchun proksi-vosita.",en:"Proxy tool for testing web application security.",ru:"Прокси-инструмент для тестирования безопасности веб-приложений."},
+    'netcat':{uz:"(nc) — tarmoq ulanishlarini o'qish/yozish uchun universal vosita.",en:"(nc) — universal tool for reading/writing network connections.",ru:"(nc) — универсальный инструмент для чтения/записи сетевых соединений."},
+    'ls':{uz:"Joriy papkadagi fayl va papkalarni ko'rsatadi. <code>ls -la</code> — yashirin fayllar bilan.",en:"Lists files and folders in the current directory. <code>ls -la</code> — includes hidden files.",ru:"Показывает файлы и папки в текущей директории. <code>ls -la</code> — включая скрытые файлы."},
+    'cd':{uz:"Papka almashtiradi. Masalan: <code>cd Downloads</code>.",en:"Changes directory. E.g. <code>cd Downloads</code>.",ru:"Меняет директорию. Напр. <code>cd Downloads</code>."},
+    'pwd':{uz:"Joriy papkaning to'liq yo'lini ko'rsatadi.",en:"Prints the current directory's full path.",ru:"Выводит полный путь текущей директории."},
+    'sudo':{uz:"Administrator (root) huquqi bilan buyruq bajarish.",en:"Runs a command with administrator (root) privileges.",ru:"Выполняет команду с правами администратора (root)."},
+    'apt':{uz:"Debian/Kali paket menejeri: <code>apt update</code>, <code>apt install nomi</code>.",en:"Debian/Kali package manager: <code>apt update</code>, <code>apt install name</code>.",ru:"Пакетный менеджер Debian/Kali: <code>apt update</code>, <code>apt install имя</code>."},
+    'chmod':{uz:"Fayl ruxsatlarini o'zgartiradi. Masalan: <code>chmod +x script.sh</code>.",en:"Changes file permissions. E.g. <code>chmod +x script.sh</code>.",ru:"Меняет права доступа файла. Напр. <code>chmod +x script.sh</code>."},
+    'grep':{uz:"Matn ichidan qidiradi. Masalan: <code>grep \"xato\" log.txt</code>.",en:"Searches text. E.g. <code>grep \"error\" log.txt</code>.",ru:"Ищет текст. Напр. <code>grep \"ошибка\" log.txt</code>."},
+    'ps':{uz:"Ishlayotgan jarayonlarni ro'yxatlaydi. <code>ps aux</code> — barcha jarayonlar.",en:"Lists running processes. <code>ps aux</code> — all processes.",ru:"Показывает запущенные процессы. <code>ps aux</code> — все процессы."},
+    'kill':{uz:"Jarayonni ID (PID) bo'yicha to'xtatadi: <code>kill 1234</code>.",en:"Stops a process by ID (PID): <code>kill 1234</code>.",ru:"Останавливает процесс по ID (PID): <code>kill 1234</code>."},
+    'ifconfig':{uz:"(yoki <code>ip a</code>) — tarmoq interfeyslari va IP-manzillarni ko'rsatadi.",en:"(or <code>ip a</code>) — shows network interfaces and IP addresses.",ru:"(или <code>ip a</code>) — показывает сетевые интерфейсы и IP-адреса."},
+    'ssh':{uz:"Masofaviy serverga xavfsiz ulanish: <code>ssh user@ip_manzil</code>.",en:"Securely connects to a remote server: <code>ssh user@ip_address</code>.",ru:"Безопасное подключение к удалённому серверу: <code>ssh user@ip_адрес</code>."},
+    'nikto':{uz:"Veb-serverlarda zaifliklarni skanerlash vositasi.",en:"Web server vulnerability scanning tool.",ru:"Инструмент сканирования уязвимостей веб-серверов."},
+    'gobuster':{uz:"Veb-saytdagi yashirin papka/fayllarni topish vositasi.",en:"Finds hidden folders/files on a website.",ru:"Находит скрытые папки/файлы на сайте."},
+    'whois':{uz:"Domen egasi haqida ma'lumot oladi: <code>whois example.com</code>.",en:"Gets domain owner info: <code>whois example.com</code>.",ru:"Получает информацию о владельце домена: <code>whois example.com</code>."},
+    'dig':{uz:"DNS so'rovlarini yuboradi: <code>dig example.com</code>.",en:"Sends DNS queries: <code>dig example.com</code>.",ru:"Отправляет DNS-запросы: <code>dig example.com</code>."},
+    'traceroute':{uz:"Tarmoq paketining yo'lini kuzatadi.",en:"Traces the path a network packet takes.",ru:"Отслеживает путь сетевого пакета."},
+    'tcpdump':{uz:"Tarmoq paketlarini terminalda ushlab tahlil qiladi.",en:"Captures and analyzes network packets in the terminal.",ru:"Перехватывает и анализирует сетевые пакеты в терминале."},
+    'msfvenom':{uz:"Metasploit'ning zararli fayl (payload) yaratish vositasi.",en:"Metasploit's payload generation tool.",ru:"Инструмент Metasploit для создания payload (вредоносного файла)."},
+    'crunch':{uz:"Parollar lug'atini (wordlist) yaratish vositasi.",en:"Wordlist/password dictionary generator.",ru:"Генератор словарей паролей (wordlist)."},
+    'hashcat':{uz:"Kuchli parol xesh buzish vositasi (GPU tezligida).",en:"Powerful password hash cracking tool (GPU-accelerated).",ru:"Мощный инструмент взлома хешей паролей (с ускорением GPU)."},
+    'searchsploit':{uz:"Ma'lum zaifliklar (exploit) bazasidan qidiradi.",en:"Searches a database of known exploits.",ru:"Ищет в базе известных эксплойтов."},
+    'airmon-ng':{uz:"Wi-Fi adapterni monitor rejimiga o'tkazadi.",en:"Puts a Wi-Fi adapter into monitor mode.",ru:"Переводит Wi-Fi адаптер в режим монитора."},
+    'wpscan':{uz:"WordPress saytlar xavfsizligini tekshiradi.",en:"Scans WordPress sites for security issues.",ru:"Проверяет безопасность сайтов на WordPress."},
+    'enum4linux':{uz:"Windows/Samba tizimlaridan ma'lumot yig'adi.",en:"Gathers info from Windows/Samba systems.",ru:"Собирает информацию с систем Windows/Samba."},
+    'msfconsole':{uz:"Metasploit freymvorkining asosiy konsoli.",en:"Metasploit framework's main console.",ru:"Основная консоль фреймворка Metasploit."},
+    'mkdir':{uz:"Yangi papka yaratadi: <code>mkdir yangi_papka</code>.",en:"Creates a new folder: <code>mkdir new_folder</code>.",ru:"Создаёт новую папку: <code>mkdir новая_папка</code>."},
+    'rm':{uz:"Faylni o'chiradi. <code>rm -rf papka</code> — papkani butunlay o'chiradi (ehtiyot bo'ling!).",en:"Deletes a file. <code>rm -rf folder</code> — deletes a folder entirely (be careful!).",ru:"Удаляет файл. <code>rm -rf папка</code> — удаляет папку полностью (будьте осторожны!)."},
+    'cp':{uz:"Fayl nusxalaydi: <code>cp fayl1 fayl2</code>.",en:"Copies a file: <code>cp file1 file2</code>.",ru:"Копирует файл: <code>cp файл1 файл2</code>."},
+    'mv':{uz:"Faylni ko'chiradi yoki qayta nomlaydi: <code>mv eski.txt yangi.txt</code>.",en:"Moves or renames a file: <code>mv old.txt new.txt</code>.",ru:"Перемещает или переименовывает файл: <code>mv старый.txt новый.txt</code>."},
+    'top':{uz:"Jarayonlarni jonli (real vaqtda) ko'rsatadi.",en:"Shows processes live (real-time).",ru:"Показывает процессы в реальном времени."},
+    'man':{uz:"Buyruq qo'llanmasini ochadi: <code>man ls</code>.",en:"Opens a command's manual page: <code>man ls</code>.",ru:"Открывает страницу руководства команды: <code>man ls</code>."},
+    'history':{uz:"Terminalda oldin kiritilgan buyruqlar tarixini ko'rsatadi.",en:"Shows previously entered terminal commands.",ru:"Показывает историю ранее введённых команд."},
+    'find':{uz:"Fayllarni qidiradi: <code>find / -name \"*.txt\"</code>.",en:"Searches for files: <code>find / -name \"*.txt\"</code>.",ru:"Ищет файлы: <code>find / -name \"*.txt\"</code>."},
+    'curl':{uz:"Veb-manzilga so'rov yuboradi: <code>curl https://example.com</code>.",en:"Sends a request to a URL: <code>curl https://example.com</code>.",ru:"Отправляет запрос на URL: <code>curl https://example.com</code>."},
+    'wget':{uz:"Fayl yoki sahifani internetdan yuklab oladi.",en:"Downloads a file or page from the internet.",ru:"Загружает файл или страницу из интернета."},
+    'uname':{uz:"Tizim/yadro ma'lumotlarini chiqaradi: <code>uname -a</code>.",en:"Prints system/kernel info: <code>uname -a</code>.",ru:"Выводит информацию о системе/ядре: <code>uname -a</code>."},
+    'whoami':{uz:"Joriy foydalanuvchi nomini ko'rsatadi.",en:"Shows the current username.",ru:"Показывает имя текущего пользователя."},
+    'id':{uz:"Foydalanuvchi va guruh identifikatorlarini chiqaradi.",en:"Prints user and group IDs.",ru:"Выводит ID пользователя и группы."},
+    'df':{uz:"Disk maydonini ko'rsatadi: <code>df -h</code>.",en:"Shows disk space: <code>df -h</code>.",ru:"Показывает дисковое пространство: <code>df -h</code>."},
+    'free':{uz:"Operativ xotira holatini tekshiradi: <code>free -m</code>.",en:"Checks RAM usage: <code>free -m</code>.",ru:"Проверяет использование оперативной памяти: <code>free -m</code>."},
+    'touch':{uz:"Bo'sh fayl yaratadi: <code>touch fayl.txt</code>.",en:"Creates an empty file: <code>touch file.txt</code>.",ru:"Создаёт пустой файл: <code>touch файл.txt</code>."},
+    'cat':{uz:"Fayl ichini ko'rsatadi: <code>cat fayl.txt</code>.",en:"Displays a file's contents: <code>cat file.txt</code>.",ru:"Показывает содержимое файла: <code>cat файл.txt</code>."},
+    'nano':{uz:"Oddiy matn tahrirlovchini ochadi.",en:"Opens a simple text editor.",ru:"Открывает простой текстовый редактор."},
+    'chown':{uz:"Fayl egasini o'zgartiradi: <code>chown root:root fayl</code>.",en:"Changes a file's owner: <code>chown root:root file</code>.",ru:"Меняет владельца файла: <code>chown root:root файл</code>."},
+    'ip':{uz:"(ip a) — tarmoq interfeyslari va IP-manzillar (ifconfig'ning zamonaviy o'rnini bosuvchisi).",en:"(ip a) — network interfaces and IP addresses (modern replacement for ifconfig).",ru:"(ip a) — сетевые интерфейсы и IP-адреса (современная замена ifconfig)."},
+    'ping':{uz:"Tarmoq/server bilan aloqani tekshiradi.",en:"Tests connectivity to a network/server.",ru:"Проверяет соединение с сетью/сервером."},
+    'netstat':{uz:"Ochiq portlar va ulanishlarni ko'rsatadi: <code>netstat -tunlp</code>.",en:"Shows open ports and connections: <code>netstat -tunlp</code>.",ru:"Показывает открытые порты и соединения: <code>netstat -tunlp</code>."}
+  },
+  macos:{
+    'brew':{uz:"Homebrew — macOS uchun paket menejeri: <code>brew install nomi</code>.",en:"Homebrew — macOS package manager: <code>brew install name</code>.",ru:"Homebrew — менеджер пакетов для macOS: <code>brew install имя</code>."},
+    'open':{uz:"Fayl yoki dasturni ochadi: <code>open .</code> — joriy papkani Finder'da ochadi.",en:"Opens a file or app: <code>open .</code> — opens the current folder in Finder.",ru:"Открывает файл или программу: <code>open .</code> — открывает текущую папку в Finder."},
+    'ls':{uz:"Joriy papkadagi fayllarni ko'rsatadi. <code>ls -la</code> — batafsil.",en:"Lists files in the current directory. <code>ls -la</code> — detailed view.",ru:"Показывает файлы в текущей директории. <code>ls -la</code> — подробный вид."},
+    'cd':{uz:"Papka almashtiradi: <code>cd Desktop</code>.",en:"Changes directory: <code>cd Desktop</code>.",ru:"Меняет директорию: <code>cd Desktop</code>."},
+    'pwd':{uz:"Joriy papka yo'lini ko'rsatadi.",en:"Shows the current directory path.",ru:"Показывает путь текущей директории."},
+    'sudo':{uz:"Administrator huquqi bilan buyruq bajaradi.",en:"Runs a command with administrator privileges.",ru:"Выполняет команду с правами администратора."},
+    'diskutil':{uz:"Disklarni boshqarish vositasi (formatlash, ro'yxatlash).",en:"Disk management tool (formatting, listing).",ru:"Инструмент управления дисками (форматирование, список)."},
+    'launchctl':{uz:"macOS xizmatlarini (daemon/agent) boshqarish vositasi.",en:"Manages macOS services (daemons/agents).",ru:"Управляет службами macOS (демонами/агентами)."},
+    'chmod':{uz:"Fayl ruxsatlarini o'zgartiradi.",en:"Changes file permissions.",ru:"Меняет права доступа файла."},
+    'grep':{uz:"Matn ichidan qidiradi.",en:"Searches text.",ru:"Ищет текст."},
+    'ps':{uz:"Ishlayotgan jarayonlarni ko'rsatadi. <code>ps aux</code>.",en:"Shows running processes. <code>ps aux</code>.",ru:"Показывает запущенные процессы. <code>ps aux</code>."},
+    'kill':{uz:"Jarayonni to'xtatadi: <code>kill 1234</code>.",en:"Stops a process: <code>kill 1234</code>.",ru:"Останавливает процесс: <code>kill 1234</code>."},
+    'ifconfig':{uz:"Tarmoq interfeyslarini ko'rsatadi.",en:"Shows network interfaces.",ru:"Показывает сетевые интерфейсы."},
+    'ssh':{uz:"Masofaviy serverga ulanish: <code>ssh user@ip_manzil</code>.",en:"Connects to a remote server: <code>ssh user@ip_address</code>.",ru:"Подключается к удалённому серверу: <code>ssh user@ip_адрес</code>."},
+    'defaults':{uz:"macOS tizim sozlamalarini terminal orqali o'zgartirish vositasi.",en:"Changes macOS system settings via the terminal.",ru:"Меняет системные настройки macOS через терминал."},
+    'spctl':{uz:"Gatekeeper (dastur xavfsizligi) sozlamalarini boshqaradi.",en:"Manages Gatekeeper (app security) settings.",ru:"Управляет настройками Gatekeeper (безопасность приложений)."},
+    'mkdir':{uz:"Yangi papka yaratadi.",en:"Creates a new folder.",ru:"Создаёт новую папку."},
+    'rm':{uz:"Faylni o'chiradi: <code>rm -rf papka</code> (ehtiyot bo'ling!).",en:"Deletes a file: <code>rm -rf folder</code> (be careful!).",ru:"Удаляет файл: <code>rm -rf папка</code> (будьте осторожны!)."},
+    'cp':{uz:"Fayl nusxalaydi.",en:"Copies a file.",ru:"Копирует файл."},
+    'mv':{uz:"Faylni ko'chiradi/qayta nomlaydi.",en:"Moves/renames a file.",ru:"Перемещает/переименовывает файл."},
+    'top':{uz:"Jarayonlarni jonli ko'rsatadi.",en:"Shows processes live.",ru:"Показывает процессы в реальном времени."},
+    'man':{uz:"Buyruq qo'llanmasini ochadi.",en:"Opens a command's manual page.",ru:"Открывает страницу руководства команды."},
+    'curl':{uz:"Veb-manzilga so'rov yuboradi.",en:"Sends a request to a URL.",ru:"Отправляет запрос на URL."},
+    'wget':{uz:"Fayl yuklab oladi (avval <code>brew install wget</code> kerak).",en:"Downloads a file (requires <code>brew install wget</code> first).",ru:"Загружает файл (сначала требуется <code>brew install wget</code>)."},
+    'find':{uz:"Fayllarni qidiradi.",en:"Searches for files.",ru:"Ищет файлы."},
+    'history':{uz:"Buyruqlar tarixini ko'rsatadi.",en:"Shows command history.",ru:"Показывает историю команд."},
+    'xcode-select':{uz:"Xcode Command Line Tools'ni boshqaradi.",en:"Manages Xcode Command Line Tools.",ru:"Управляет Xcode Command Line Tools."},
+    'system_profiler':{uz:"Kompyuter apparat/dasturiy ta'minoti haqida batafsil ma'lumot.",en:"Detailed hardware/software info about the computer.",ru:"Подробная информация об оборудовании/ПО компьютера."},
+    'networksetup':{uz:"Tarmoq sozlamalarini terminal orqali boshqaradi.",en:"Manages network settings via the terminal.",ru:"Управляет сетевыми настройками через терминал."},
+    'plutil':{uz:".plist fayllarini ko'rish/tekshirish vositasi.",en:"Views/checks .plist files.",ru:"Просмотр/проверка файлов .plist."},
+    'caffeinate':{uz:"Kompyuterni uyquga ketishdan vaqtincha to'xtatadi.",en:"Temporarily prevents the Mac from sleeping.",ru:"Временно не даёт Mac уйти в спящий режим."},
+    'screencapture':{uz:"Terminal orqali skrinshot oladi.",en:"Takes a screenshot via the terminal.",ru:"Делает скриншот через терминал."},
+    'say':{uz:"Matnni ovozga aylantiradi: <code>say salom</code>.",en:"Speaks text aloud: <code>say hello</code>.",ru:"Озвучивает текст: <code>say привет</code>."},
+    'pbcopy / pbpaste':{uz:"Clipboard (almashish buferi) bilan ishlash.",en:"Works with the clipboard.",ru:"Работает с буфером обмена."},
+    'sw_vers':{uz:"macOS versiyasi haqida ma'lumot beradi.",en:"Shows the macOS version.",ru:"Показывает версию macOS."},
+    'uname':{uz:"Protsessor arxitekturasini ko'rsatadi: <code>uname -m</code> (Intel yoki Apple Silicon).",en:"Shows processor architecture: <code>uname -m</code> (Intel or Apple Silicon).",ru:"Показывает архитектуру процессора: <code>uname -m</code> (Intel или Apple Silicon)."},
+    'htop':{uz:"Jarayonlarni qulay interfeysda ko'rsatadi (o'rnatilgan bo'lsa).",en:"Shows processes in a friendly UI (if installed).",ru:"Показывает процессы в удобном интерфейсе (если установлен)."},
+    'killall':{uz:"Nomi bo'yicha dasturni to'xtatadi: <code>killall Finder</code>.",en:"Stops an app by name: <code>killall Finder</code>.",ru:"Останавливает программу по имени: <code>killall Finder</code>."},
+    'purge':{uz:"(sudo purge) — operativ xotirani keshdan tozalaydi.",en:"(sudo purge) — clears RAM cache.",ru:"(sudo purge) — очищает кеш оперативной памяти."},
+    'lsof':{uz:"Portni qaysi dastur band qilganini ko'rsatadi: <code>lsof -i :8080</code>.",en:"Shows which app is using a port: <code>lsof -i :8080</code>.",ru:"Показывает, какая программа использует порт: <code>lsof -i :8080</code>."},
+    'ping':{uz:"Tarmoq aloqasini tekshiradi.",en:"Tests network connectivity.",ru:"Проверяет сетевое соединение."}
+  },
+  windows:{
+    'dir':{uz:"Joriy papkadagi fayllarni ro'yxatlaydi (Linux'dagi <code>ls</code> analogi).",en:"Lists files in the current folder (like Linux's <code>ls</code>).",ru:"Показывает список файлов в текущей папке (аналог <code>ls</code> в Linux)."},
+    'cd':{uz:"Papka almashtiradi: <code>cd Desktop</code>.",en:"Changes directory: <code>cd Desktop</code>.",ru:"Меняет директорию: <code>cd Desktop</code>."},
+    'cls':{uz:"Terminal ekranini tozalaydi.",en:"Clears the terminal screen.",ru:"Очищает экран терминала."},
+    'ipconfig':{uz:"Tarmoq (IP) sozlamalarini ko'rsatadi. <code>ipconfig /all</code> — batafsil.",en:"Shows network (IP) settings. <code>ipconfig /all</code> — detailed.",ru:"Показывает сетевые (IP) настройки. <code>ipconfig /all</code> — подробно."},
+    'tasklist':{uz:"Ishlayotgan jarayonlar (dasturlar) ro'yxatini ko'rsatadi.",en:"Lists running processes (programs).",ru:"Показывает список запущенных процессов (программ)."},
+    'taskkill':{uz:"Jarayonni to'xtatadi: <code>taskkill /IM notepad.exe /F</code>.",en:"Stops a process: <code>taskkill /IM notepad.exe /F</code>.",ru:"Останавливает процесс: <code>taskkill /IM notepad.exe /F</code>."},
+    'copy':{uz:"Faylni nusxalaydi: <code>copy a.txt b.txt</code>.",en:"Copies a file: <code>copy a.txt b.txt</code>.",ru:"Копирует файл: <code>copy a.txt b.txt</code>."},
+    'del':{uz:"Faylni o'chiradi: <code>del fayl.txt</code>.",en:"Deletes a file: <code>del file.txt</code>.",ru:"Удаляет файл: <code>del файл.txt</code>."},
+    'mkdir':{uz:"Yangi papka yaratadi.",en:"Creates a new folder.",ru:"Создаёт новую папку."},
+    'ping':{uz:"Tarmoq/server bilan aloqani tekshiradi: <code>ping google.com</code>.",en:"Tests connectivity: <code>ping google.com</code>.",ru:"Проверяет соединение: <code>ping google.com</code>."},
+    'powershell':{uz:"Kuchliroq PowerShell terminaliga o'tish.",en:"Switches to the more powerful PowerShell.",ru:"Переключает на более мощный терминал PowerShell."},
+    'get-process':{uz:"(PowerShell) Ishlayotgan jarayonlarni ko'rsatadi.",en:"(PowerShell) Shows running processes.",ru:"(PowerShell) Показывает запущенные процессы."},
+    'get-childitem':{uz:"(PowerShell, qisqasi <code>gci</code> yoki <code>ls</code>) — papka tarkibini ko'rsatadi.",en:"(PowerShell, alias <code>gci</code> or <code>ls</code>) — lists folder contents.",ru:"(PowerShell, псевдоним <code>gci</code> или <code>ls</code>) — список содержимого папки."},
+    'net user':{uz:"Foydalanuvchi hisoblarini boshqaradi.",en:"Manages user accounts.",ru:"Управляет учётными записями пользователей."},
+    'sfc':{uz:"Tizim fayllarini tekshirish/tiklash: <code>sfc /scannow</code>.",en:"Checks/repairs system files: <code>sfc /scannow</code>.",ru:"Проверяет/восстанавливает системные файлы: <code>sfc /scannow</code>."},
+    'chkdsk':{uz:"Diskni xatolarga tekshiradi.",en:"Checks the disk for errors.",ru:"Проверяет диск на ошибки."},
+    'xcopy':{uz:"Fayl/papkalarni ilg'or nusxalash: <code>xcopy A B /E</code>.",en:"Advanced file/folder copying: <code>xcopy A B /E</code>.",ru:"Расширенное копирование файлов/папок: <code>xcopy A B /E</code>."},
+    'systeminfo':{uz:"Kompyuter haqida batafsil tizim ma'lumoti.",en:"Detailed system info about the computer.",ru:"Подробная системная информация о компьютере."},
+    'netstat':{uz:"Faol tarmoq ulanishlarini ko'rsatadi.",en:"Shows active network connections.",ru:"Показывает активные сетевые соединения."},
+    'tracert':{uz:"Tarmoq paketi yo'lini kuzatadi.",en:"Traces a network packet's path.",ru:"Отслеживает путь сетевого пакета."},
+    'shutdown':{uz:"Kompyuterni o'chiradi/qayta ishga tushiradi: <code>shutdown /s /t 0</code>.",en:"Shuts down/restarts the computer: <code>shutdown /s /t 0</code>.",ru:"Выключает/перезагружает компьютер: <code>shutdown /s /t 0</code>."},
+    'set-executionpolicy':{uz:"(PowerShell) Skriptlarni ishga tushirish siyosatini sozlaydi.",en:"(PowerShell) Configures script execution policy.",ru:"(PowerShell) Настраивает политику выполнения скриптов."},
+    'get-service':{uz:"(PowerShell) Windows xizmatlarini ko'rsatadi.",en:"(PowerShell) Shows Windows services.",ru:"(PowerShell) Показывает службы Windows."},
+    'stop-process':{uz:"(PowerShell) Jarayonni to'xtatadi.",en:"(PowerShell) Stops a process.",ru:"(PowerShell) Останавливает процесс."},
+    'invoke-webrequest':{uz:"(PowerShell) Veb-manzilga so'rov yuboradi (curl analogi).",en:"(PowerShell) Sends a web request (like curl).",ru:"(PowerShell) Отправляет веб-запрос (аналог curl)."},
+    'reg':{uz:"Registrga (reestr) kirish/o'zgartirish buyrug'i.",en:"Accesses/modifies the Windows registry.",ru:"Доступ/изменение реестра Windows."},
+    'wmic':{uz:"Windows Management Instrumentation orqali tizimni boshqarish.",en:"System management via Windows Management Instrumentation.",ru:"Управление системой через Windows Management Instrumentation."},
+    'find':{uz:"Matn ichidan qidiradi (grep analogi).",en:"Searches text (like grep).",ru:"Ищет текст (аналог grep)."},
+    'attrib':{uz:"Fayl atributlarini (yashirin, faqat o'qish) o'zgartiradi.",en:"Changes file attributes (hidden, read-only).",ru:"Меняет атрибуты файла (скрытый, только чтение)."},
+    'move':{uz:"Faylni ko'chiradi.",en:"Moves a file.",ru:"Перемещает файл."},
+    'rename':{uz:"Faylni qayta nomlaydi.",en:"Renames a file.",ru:"Переименовывает файл."},
+    'hostname':{uz:"Kompyuterning tarmoqdagi nomini ko'rsatadi.",en:"Shows the computer's network name.",ru:"Показывает сетевое имя компьютера."},
+    'ver':{uz:"Windows versiyasini ko'rsatadi.",en:"Shows the Windows version.",ru:"Показывает версию Windows."},
+    'rmdir':{uz:"Papkani o'chiradi: <code>rmdir /s /q papka_nomi</code> — ichidagi hammasi bilan.",en:"Deletes a folder: <code>rmdir /s /q folder_name</code> — including contents.",ru:"Удаляет папку: <code>rmdir /s /q имя_папки</code> — вместе с содержимым."},
+    'type':{uz:"Yangi bo'sh fayl yaratish uchun ham ishlatiladi: <code>type nul > fayl.txt</code>.",en:"Also used to create an empty file: <code>type nul > file.txt</code>.",ru:"Также используется для создания пустого файла: <code>type nul > файл.txt</code>."},
+    'getmac':{uz:"Kompyuterning MAC-manzilini ko'rsatadi.",en:"Shows the computer's MAC address.",ru:"Показывает MAC-адрес компьютера."},
+    'explorer':{uz:"Joriy papkani Windows Provodnikda ochadi: <code>explorer .</code>.",en:"Opens the current folder in Windows Explorer: <code>explorer .</code>.",ru:"Открывает текущую папку в Проводнике Windows: <code>explorer .</code>."},
+    'control':{uz:"Eski Boshqaruv panelini (Control Panel) ochadi.",en:"Opens the classic Control Panel.",ru:"Открывает классическую Панель управления."},
+    'msconfig':{uz:"Tizim sozlamalari va avtoyuklanish oynasini ochadi.",en:"Opens system config and startup settings.",ru:"Открывает настройки конфигурации системы и автозагрузки."},
+    'regedit':{uz:"Windows reyestr tahrirlovchisini ochadi.",en:"Opens the Windows Registry Editor.",ru:"Открывает редактор реестра Windows."},
+    'devmgmt':{uz:"Qurilmalar boshqaruvchisini (Device Manager) ochadi.",en:"Opens Device Manager.",ru:"Открывает Диспетчер устройств."},
+    'taskmgr':{uz:"Vazifalar boshqaruvchisini (Task Manager) ochadi.",en:"Opens Task Manager.",ru:"Открывает Диспетчер задач."},
+    'winget':{uz:"Zamonaviy paket menejeri: <code>winget install dastur</code>, <code>winget upgrade --all</code>.",en:"Modern package manager: <code>winget install app</code>, <code>winget upgrade --all</code>.",ru:"Современный менеджер пакетов: <code>winget install программа</code>, <code>winget upgrade --all</code>."}
+  }
+};
+const OS_NAMES={kali:'Kali Linux',macos:'macOS',windows:'Windows'};
+function osDesc(entry){
+  if(typeof entry==='string')return entry;
+  return entry[currentLang]||entry.en||entry.uz;
+}
+function osIntro(os){
+  const names=Object.keys(OS_CMDS[os]).map(function(k){return '<code>'+k+'</code>'}).join(', ');
+  return (currentLang==='en'
+    ?'<strong>'+OS_NAMES[os]+' mode</strong> is on. Ask about a command, e.g. "'+Object.keys(OS_CMDS[os])[0]+' nima?" Available: '
+    :'<strong>'+OS_NAMES[os]+' rejimi</strong> yoqildi. Buyruq nomini yozing, masalan "'+Object.keys(OS_CMDS[os])[0]+' nima?" Mavjud buyruqlar: ')
+    +names;
+}
+function getOSCodeReply(text){
+  if(!currentOS)return null;
+  const t=text.toLowerCase().trim();
+  const dict=OS_CMDS[currentOS];
+  for(const cmd in dict){
+    const key=cmd.toLowerCase();
+    if(t===key||t.indexOf(key+' ')===0||t.indexOf(' '+key)>=0||t.indexOf(key)===0){
+      return '<strong>'+OS_NAMES[currentOS]+' — <code>'+cmd+'</code></strong><div class="code-box">'+osDesc(dict[cmd])+'</div>';
+    }
+  }
+  return null;
+}
+const AKROM_KB={
+  "salom":"Salom! Qanday yordam bera olaman?",
+  "hello":"Hello! How can I help you?",
+  "hi":"Hi! What do you need?",
+  "hey":"Hey! Ask me anything.",
+  "привет":"Привет! Чем помочь?",
+  "merhaba":"Merhaba! Nasıl yardımcı olayım?",
+  "html nima":"HTML — dasturlash texnologiyasi. Aniqroq savol bering (masalan: html loop).",
+  "what is html":"HTML is a programming technology. Ask a specific question.",
+  "html nedir":"HTML bir yazılım teknolojisidir.",
+  "html это":"HTML — технология программирования.",
+  "css nima":"CSS — dasturlash texnologiyasi. Aniqroq savol bering (masalan: css loop).",
+  "what is css":"CSS is a programming technology. Ask a specific question.",
+  "css nedir":"CSS bir yazılım teknolojisidir.",
+  "css это":"CSS — технология программирования.",
+  "javascript nima":"JAVASCRIPT — dasturlash texnologiyasi. Aniqroq savol bering (masalan: javascript loop).",
+  "what is javascript":"JAVASCRIPT is a programming technology. Ask a specific question.",
+  "javascript nedir":"JAVASCRIPT bir yazılım teknolojisidir.",
+  "javascript это":"JAVASCRIPT — технология программирования.",
+  "js nima":"JS — dasturlash texnologiyasi. Aniqroq savol bering (masalan: js loop).",
+  "what is js":"JS is a programming technology. Ask a specific question.",
+  "js nedir":"JS bir yazılım teknolojisidir.",
+  "js это":"JS — технология программирования.",
+  "python nima":"PYTHON — dasturlash texnologiyasi. Aniqroq savol bering (masalan: python loop).",
+  "what is python":"PYTHON is a programming technology. Ask a specific question.",
+  "python nedir":"PYTHON bir yazılım teknolojisidir.",
+  "python это":"PYTHON — технология программирования.",
+  "java nima":"JAVA — dasturlash texnologiyasi. Aniqroq savol bering (masalan: java loop).",
+  "what is java":"JAVA is a programming technology. Ask a specific question.",
+  "java nedir":"JAVA bir yazılım teknolojisidir.",
+  "java это":"JAVA — технология программирования.",
+  "c++ nima":"C++ — dasturlash texnologiyasi. Aniqroq savol bering (masalan: c++ loop).",
+  "what is c++":"C++ is a programming technology. Ask a specific question.",
+  "c++ nedir":"C++ bir yazılım teknolojisidir.",
+  "c++ это":"C++ — технология программирования.",
+  "c# nima":"C# — dasturlash texnologiyasi. Aniqroq savol bering (masalan: c# loop).",
+  "what is c#":"C# is a programming technology. Ask a specific question.",
+  "c# nedir":"C# bir yazılım teknolojisidir.",
+  "c# это":"C# — технология программирования.",
+  "php nima":"PHP — dasturlash texnologiyasi. Aniqroq savol bering (masalan: php loop).",
+  "what is php":"PHP is a programming technology. Ask a specific question.",
+  "php nedir":"PHP bir yazılım teknolojisidir.",
+  "php это":"PHP — технология программирования.",
+  "sql nima":"SQL — dasturlash texnologiyasi. Aniqroq savol bering (masalan: sql loop).",
+  "what is sql":"SQL is a programming technology. Ask a specific question.",
+  "sql nedir":"SQL bir yazılım teknolojisidir.",
+  "sql это":"SQL — технология программирования.",
+  "rust nima":"RUST — dasturlash texnologiyasi. Aniqroq savol bering (masalan: rust loop).",
+  "what is rust":"RUST is a programming technology. Ask a specific question.",
+  "rust nedir":"RUST bir yazılım teknolojisidir.",
+  "rust это":"RUST — технология программирования.",
+  "go nima":"GO — dasturlash texnologiyasi. Aniqroq savol bering (masalan: go loop).",
+  "what is go":"GO is a programming technology. Ask a specific question.",
+  "go nedir":"GO bir yazılım teknolojisidir.",
+  "go это":"GO — технология программирования.",
+  "kotlin nima":"KOTLIN — dasturlash texnologiyasi. Aniqroq savol bering (masalan: kotlin loop).",
+  "what is kotlin":"KOTLIN is a programming technology. Ask a specific question.",
+  "kotlin nedir":"KOTLIN bir yazılım teknolojisidir.",
+  "kotlin это":"KOTLIN — технология программирования.",
+  "swift nima":"SWIFT — dasturlash texnologiyasi. Aniqroq savol bering (masalan: swift loop).",
+  "what is swift":"SWIFT is a programming technology. Ask a specific question.",
+  "swift nedir":"SWIFT bir yazılım teknolojisidir.",
+  "swift это":"SWIFT — технология программирования.",
+  "typescript nima":"TYPESCRIPT — dasturlash texnologiyasi. Aniqroq savol bering (masalan: typescript loop).",
+  "what is typescript":"TYPESCRIPT is a programming technology. Ask a specific question.",
+  "typescript nedir":"TYPESCRIPT bir yazılım teknolojisidir.",
+  "typescript это":"TYPESCRIPT — технология программирования.",
+  "ruby nima":"RUBY — dasturlash texnologiyasi. Aniqroq savol bering (masalan: ruby loop).",
+  "what is ruby":"RUBY is a programming technology. Ask a specific question.",
+  "ruby nedir":"RUBY bir yazılım teknolojisidir.",
+  "ruby это":"RUBY — технология программирования.",
+  "bash nima":"BASH — dasturlash texnologiyasi. Aniqroq savol bering (masalan: bash loop).",
+  "what is bash":"BASH is a programming technology. Ask a specific question.",
+  "bash nedir":"BASH bir yazılım teknolojisidir.",
+  "bash это":"BASH — технология программирования.",
+  "powershell nima":"POWERSHELL — dasturlash texnologiyasi. Aniqroq savol bering (masalan: powershell loop).",
+  "what is powershell":"POWERSHELL is a programming technology. Ask a specific question.",
+  "powershell nedir":"POWERSHELL bir yazılım teknolojisidir.",
+  "powershell это":"POWERSHELL — технология программирования.",
+  "div tegi":"<code>&lt;div&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/div",
+  "html div":"<code>&lt;div&gt;</code> HTML element.",
+  "div tag":"HTML tag <code>&lt;div&gt;</code>.",
+  "span tegi":"<code>&lt;span&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/span",
+  "html span":"<code>&lt;span&gt;</code> HTML element.",
+  "span tag":"HTML tag <code>&lt;span&gt;</code>.",
+  "p tegi":"<code>&lt;p&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/p",
+  "html p":"<code>&lt;p&gt;</code> HTML element.",
+  "p tag":"HTML tag <code>&lt;p&gt;</code>.",
+  "a tegi":"<code>&lt;a&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/a",
+  "html a":"<code>&lt;a&gt;</code> HTML element.",
+  "a tag":"HTML tag <code>&lt;a&gt;</code>.",
+  "img tegi":"<code>&lt;img&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/img",
+  "html img":"<code>&lt;img&gt;</code> HTML element.",
+  "img tag":"HTML tag <code>&lt;img&gt;</code>.",
+  "ul tegi":"<code>&lt;ul&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/ul",
+  "html ul":"<code>&lt;ul&gt;</code> HTML element.",
+  "ul tag":"HTML tag <code>&lt;ul&gt;</code>.",
+  "ol tegi":"<code>&lt;ol&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/ol",
+  "html ol":"<code>&lt;ol&gt;</code> HTML element.",
+  "ol tag":"HTML tag <code>&lt;ol&gt;</code>.",
+  "li tegi":"<code>&lt;li&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/li",
+  "html li":"<code>&lt;li&gt;</code> HTML element.",
+  "li tag":"HTML tag <code>&lt;li&gt;</code>.",
+  "table tegi":"<code>&lt;table&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/table",
+  "html table":"<code>&lt;table&gt;</code> HTML element.",
+  "table tag":"HTML tag <code>&lt;table&gt;</code>.",
+  "tr tegi":"<code>&lt;tr&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/tr",
+  "html tr":"<code>&lt;tr&gt;</code> HTML element.",
+  "tr tag":"HTML tag <code>&lt;tr&gt;</code>.",
+  "td tegi":"<code>&lt;td&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/td",
+  "html td":"<code>&lt;td&gt;</code> HTML element.",
+  "td tag":"HTML tag <code>&lt;td&gt;</code>.",
+  "form tegi":"<code>&lt;form&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/form",
+  "html form":"<code>&lt;form&gt;</code> HTML element.",
+  "form tag":"HTML tag <code>&lt;form&gt;</code>.",
+  "input tegi":"<code>&lt;input&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/input",
+  "html input":"<code>&lt;input&gt;</code> HTML element.",
+  "input tag":"HTML tag <code>&lt;input&gt;</code>.",
+  "button tegi":"<code>&lt;button&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/button",
+  "html button":"<code>&lt;button&gt;</code> HTML element.",
+  "button tag":"HTML tag <code>&lt;button&gt;</code>.",
+  "header tegi":"<code>&lt;header&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/header",
+  "html header":"<code>&lt;header&gt;</code> HTML element.",
+  "header tag":"HTML tag <code>&lt;header&gt;</code>.",
+  "footer tegi":"<code>&lt;footer&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/footer",
+  "html footer":"<code>&lt;footer&gt;</code> HTML element.",
+  "footer tag":"HTML tag <code>&lt;footer&gt;</code>.",
+  "nav tegi":"<code>&lt;nav&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/nav",
+  "html nav":"<code>&lt;nav&gt;</code> HTML element.",
+  "nav tag":"HTML tag <code>&lt;nav&gt;</code>.",
+  "section tegi":"<code>&lt;section&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/section",
+  "html section":"<code>&lt;section&gt;</code> HTML element.",
+  "section tag":"HTML tag <code>&lt;section&gt;</code>.",
+  "article tegi":"<code>&lt;article&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/article",
+  "html article":"<code>&lt;article&gt;</code> HTML element.",
+  "article tag":"HTML tag <code>&lt;article&gt;</code>.",
+  "main tegi":"<code>&lt;main&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/main",
+  "html main":"<code>&lt;main&gt;</code> HTML element.",
+  "main tag":"HTML tag <code>&lt;main&gt;</code>.",
+  "h1 tegi":"<code>&lt;h1&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/h1",
+  "html h1":"<code>&lt;h1&gt;</code> HTML element.",
+  "h1 tag":"HTML tag <code>&lt;h1&gt;</code>.",
+  "h2 tegi":"<code>&lt;h2&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/h2",
+  "html h2":"<code>&lt;h2&gt;</code> HTML element.",
+  "h2 tag":"HTML tag <code>&lt;h2&gt;</code>.",
+  "h3 tegi":"<code>&lt;h3&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/h3",
+  "html h3":"<code>&lt;h3&gt;</code> HTML element.",
+  "h3 tag":"HTML tag <code>&lt;h3&gt;</code>.",
+  "script tegi":"<code>&lt;script&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/script",
+  "html script":"<code>&lt;script&gt;</code> HTML element.",
+  "script tag":"HTML tag <code>&lt;script&gt;</code>.",
+  "style tegi":"<code>&lt;style&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/style",
+  "html style":"<code>&lt;style&gt;</code> HTML element.",
+  "style tag":"HTML tag <code>&lt;style&gt;</code>.",
+  "link tegi":"<code>&lt;link&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/link",
+  "html link":"<code>&lt;link&gt;</code> HTML element.",
+  "link tag":"HTML tag <code>&lt;link&gt;</code>.",
+  "meta tegi":"<code>&lt;meta&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/meta",
+  "html meta":"<code>&lt;meta&gt;</code> HTML element.",
+  "meta tag":"HTML tag <code>&lt;meta&gt;</code>.",
+  "title tegi":"<code>&lt;title&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/title",
+  "html title":"<code>&lt;title&gt;</code> HTML element.",
+  "title tag":"HTML tag <code>&lt;title&gt;</code>.",
+  "body tegi":"<code>&lt;body&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/body",
+  "html body":"<code>&lt;body&gt;</code> HTML element.",
+  "body tag":"HTML tag <code>&lt;body&gt;</code>.",
+  "html tegi":"<code>&lt;html&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/html",
+  "html html":"<code>&lt;html&gt;</code> HTML element.",
+  "html tag":"HTML tag <code>&lt;html&gt;</code>.",
+  "head tegi":"<code>&lt;head&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/head",
+  "html head":"<code>&lt;head&gt;</code> HTML element.",
+  "head tag":"HTML tag <code>&lt;head&gt;</code>.",
+  "video tegi":"<code>&lt;video&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/video",
+  "html video":"<code>&lt;video&gt;</code> HTML element.",
+  "video tag":"HTML tag <code>&lt;video&gt;</code>.",
+  "audio tegi":"<code>&lt;audio&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/audio",
+  "html audio":"<code>&lt;audio&gt;</code> HTML element.",
+  "audio tag":"HTML tag <code>&lt;audio&gt;</code>.",
+  "canvas tegi":"<code>&lt;canvas&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/canvas",
+  "html canvas":"<code>&lt;canvas&gt;</code> HTML element.",
+  "canvas tag":"HTML tag <code>&lt;canvas&gt;</code>.",
+  "svg tegi":"<code>&lt;svg&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/svg",
+  "html svg":"<code>&lt;svg&gt;</code> HTML element.",
+  "svg tag":"HTML tag <code>&lt;svg&gt;</code>.",
+  "iframe tegi":"<code>&lt;iframe&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/iframe",
+  "html iframe":"<code>&lt;iframe&gt;</code> HTML element.",
+  "iframe tag":"HTML tag <code>&lt;iframe&gt;</code>.",
+  "select tegi":"<code>&lt;select&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/select",
+  "html select":"<code>&lt;select&gt;</code> HTML element.",
+  "select tag":"HTML tag <code>&lt;select&gt;</code>.",
+  "option tegi":"<code>&lt;option&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/option",
+  "html option":"<code>&lt;option&gt;</code> HTML element.",
+  "option tag":"HTML tag <code>&lt;option&gt;</code>.",
+  "textarea tegi":"<code>&lt;textarea&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/textarea",
+  "html textarea":"<code>&lt;textarea&gt;</code> HTML element.",
+  "textarea tag":"HTML tag <code>&lt;textarea&gt;</code>.",
+  "label tegi":"<code>&lt;label&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/label",
+  "html label":"<code>&lt;label&gt;</code> HTML element.",
+  "label tag":"HTML tag <code>&lt;label&gt;</code>.",
+  "br tegi":"<code>&lt;br&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/br",
+  "html br":"<code>&lt;br&gt;</code> HTML element.",
+  "br tag":"HTML tag <code>&lt;br&gt;</code>.",
+  "hr tegi":"<code>&lt;hr&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/hr",
+  "html hr":"<code>&lt;hr&gt;</code> HTML element.",
+  "hr tag":"HTML tag <code>&lt;hr&gt;</code>.",
+  "strong tegi":"<code>&lt;strong&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/strong",
+  "html strong":"<code>&lt;strong&gt;</code> HTML element.",
+  "strong tag":"HTML tag <code>&lt;strong&gt;</code>.",
+  "em tegi":"<code>&lt;em&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/em",
+  "html em":"<code>&lt;em&gt;</code> HTML element.",
+  "em tag":"HTML tag <code>&lt;em&gt;</code>.",
+  "code tegi":"<code>&lt;code&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/code",
+  "html code":"<code>&lt;code&gt;</code> HTML element.",
+  "code tag":"HTML tag <code>&lt;code&gt;</code>.",
+  "pre tegi":"<code>&lt;pre&gt;</code> — HTML tegi. MDN: https://developer.mozilla.org/docs/Web/HTML/Element/pre",
+  "html pre":"<code>&lt;pre&gt;</code> HTML element.",
+  "pre tag":"HTML tag <code>&lt;pre&gt;</code>.",
+  "css color":"CSS <code>color</code> xususiyati. Masalan: <code>color: ...;</code>",
+  "color css":"CSS property <code>color</code>.",
+  "css background":"CSS <code>background</code> xususiyati. Masalan: <code>background: ...;</code>",
+  "background css":"CSS property <code>background</code>.",
+  "css margin":"CSS <code>margin</code> xususiyati. Masalan: <code>margin: ...;</code>",
+  "margin css":"CSS property <code>margin</code>.",
+  "css padding":"CSS <code>padding</code> xususiyati. Masalan: <code>padding: ...;</code>",
+  "padding css":"CSS property <code>padding</code>.",
+  "css border":"CSS <code>border</code> xususiyati. Masalan: <code>border: ...;</code>",
+  "border css":"CSS property <code>border</code>.",
+  "css display":"CSS <code>display</code> xususiyati. Masalan: <code>display: ...;</code>",
+  "display css":"CSS property <code>display</code>.",
+  "css flex":"CSS <code>flex</code> xususiyati. Masalan: <code>flex: ...;</code>",
+  "flex css":"CSS property <code>flex</code>.",
+  "css grid":"CSS <code>grid</code> xususiyati. Masalan: <code>grid: ...;</code>",
+  "grid css":"CSS property <code>grid</code>.",
+  "css width":"CSS <code>width</code> xususiyati. Masalan: <code>width: ...;</code>",
+  "width css":"CSS property <code>width</code>.",
+  "css height":"CSS <code>height</code> xususiyati. Masalan: <code>height: ...;</code>",
+  "height css":"CSS property <code>height</code>.",
+  "css font-size":"CSS <code>font-size</code> xususiyati. Masalan: <code>font-size: ...;</code>",
+  "font-size css":"CSS property <code>font-size</code>.",
+  "css font-weight":"CSS <code>font-weight</code> xususiyati. Masalan: <code>font-weight: ...;</code>",
+  "font-weight css":"CSS property <code>font-weight</code>.",
+  "css text-align":"CSS <code>text-align</code> xususiyati. Masalan: <code>text-align: ...;</code>",
+  "text-align css":"CSS property <code>text-align</code>.",
+  "css position":"CSS <code>position</code> xususiyati. Masalan: <code>position: ...;</code>",
+  "position css":"CSS property <code>position</code>.",
+  "css top":"CSS <code>top</code> xususiyati. Masalan: <code>top: ...;</code>",
+  "top css":"CSS property <code>top</code>.",
+  "css left":"CSS <code>left</code> xususiyati. Masalan: <code>left: ...;</code>",
+  "left css":"CSS property <code>left</code>.",
+  "css right":"CSS <code>right</code> xususiyati. Masalan: <code>right: ...;</code>",
+  "right css":"CSS property <code>right</code>.",
+  "css bottom":"CSS <code>bottom</code> xususiyati. Masalan: <code>bottom: ...;</code>",
+  "bottom css":"CSS property <code>bottom</code>.",
+  "css z-index":"CSS <code>z-index</code> xususiyati. Masalan: <code>z-index: ...;</code>",
+  "z-index css":"CSS property <code>z-index</code>.",
+  "css opacity":"CSS <code>opacity</code> xususiyati. Masalan: <code>opacity: ...;</code>",
+  "opacity css":"CSS property <code>opacity</code>.",
+  "css overflow":"CSS <code>overflow</code> xususiyati. Masalan: <code>overflow: ...;</code>",
+  "overflow css":"CSS property <code>overflow</code>.",
+  "css cursor":"CSS <code>cursor</code> xususiyati. Masalan: <code>cursor: ...;</code>",
+  "cursor css":"CSS property <code>cursor</code>.",
+  "css box-shadow":"CSS <code>box-shadow</code> xususiyati. Masalan: <code>box-shadow: ...;</code>",
+  "box-shadow css":"CSS property <code>box-shadow</code>.",
+  "css border-radius":"CSS <code>border-radius</code> xususiyati. Masalan: <code>border-radius: ...;</code>",
+  "border-radius css":"CSS property <code>border-radius</code>.",
+  "css transition":"CSS <code>transition</code> xususiyati. Masalan: <code>transition: ...;</code>",
+  "transition css":"CSS property <code>transition</code>.",
+  "css transform":"CSS <code>transform</code> xususiyati. Masalan: <code>transform: ...;</code>",
+  "transform css":"CSS property <code>transform</code>.",
+  "css animation":"CSS <code>animation</code> xususiyati. Masalan: <code>animation: ...;</code>",
+  "animation css":"CSS property <code>animation</code>.",
+  "css gap":"CSS <code>gap</code> xususiyati. Masalan: <code>gap: ...;</code>",
+  "gap css":"CSS property <code>gap</code>.",
+  "css justify-content":"CSS <code>justify-content</code> xususiyati. Masalan: <code>justify-content: ...;</code>",
+  "justify-content css":"CSS property <code>justify-content</code>.",
+  "css align-items":"CSS <code>align-items</code> xususiyati. Masalan: <code>align-items: ...;</code>",
+  "align-items css":"CSS property <code>align-items</code>.",
+  "css flex-direction":"CSS <code>flex-direction</code> xususiyati. Masalan: <code>flex-direction: ...;</code>",
+  "flex-direction css":"CSS property <code>flex-direction</code>.",
+  "css grid-template-columns":"CSS <code>grid-template-columns</code> xususiyati. Masalan: <code>grid-template-columns: ...;</code>",
+  "grid-template-columns css":"CSS property <code>grid-template-columns</code>.",
+  "css object-fit":"CSS <code>object-fit</code> xususiyati. Masalan: <code>object-fit: ...;</code>",
+  "object-fit css":"CSS property <code>object-fit</code>.",
+  "css max-width":"CSS <code>max-width</code> xususiyati. Masalan: <code>max-width: ...;</code>",
+  "max-width css":"CSS property <code>max-width</code>.",
+  "css min-height":"CSS <code>min-height</code> xususiyati. Masalan: <code>min-height: ...;</code>",
+  "min-height css":"CSS property <code>min-height</code>.",
+  "css line-height":"CSS <code>line-height</code> xususiyati. Masalan: <code>line-height: ...;</code>",
+  "line-height css":"CSS property <code>line-height</code>.",
+  "css letter-spacing":"CSS <code>letter-spacing</code> xususiyati. Masalan: <code>letter-spacing: ...;</code>",
+  "letter-spacing css":"CSS property <code>letter-spacing</code>.",
+  "css text-decoration":"CSS <code>text-decoration</code> xususiyati. Masalan: <code>text-decoration: ...;</code>",
+  "text-decoration css":"CSS property <code>text-decoration</code>.",
+  "css white-space":"CSS <code>white-space</code> xususiyati. Masalan: <code>white-space: ...;</code>",
+  "white-space css":"CSS property <code>white-space</code>.",
+  "css visibility":"CSS <code>visibility</code> xususiyati. Masalan: <code>visibility: ...;</code>",
+  "visibility css":"CSS property <code>visibility</code>.",
+  "css pointer-events":"CSS <code>pointer-events</code> xususiyati. Masalan: <code>pointer-events: ...;</code>",
+  "pointer-events css":"CSS property <code>pointer-events</code>.",
+  "python print":"Python: <code>print</code>. Aniq misol so‘rang.",
+  "print python":"Python keyword/builtin <code>print</code>.",
+  "python if":"Python: <code>if</code>. Aniq misol so‘rang.",
+  "if python":"Python keyword/builtin <code>if</code>.",
+  "python else":"Python: <code>else</code>. Aniq misol so‘rang.",
+  "else python":"Python keyword/builtin <code>else</code>.",
+  "python elif":"Python: <code>elif</code>. Aniq misol so‘rang.",
+  "elif python":"Python keyword/builtin <code>elif</code>.",
+  "python for":"Python: <code>for</code>. Aniq misol so‘rang.",
+  "for python":"Python keyword/builtin <code>for</code>.",
+  "python while":"Python: <code>while</code>. Aniq misol so‘rang.",
+  "while python":"Python keyword/builtin <code>while</code>.",
+  "python def":"Python: <code>def</code>. Aniq misol so‘rang.",
+  "def python":"Python keyword/builtin <code>def</code>.",
+  "python class":"Python: <code>class</code>. Aniq misol so‘rang.",
+  "class python":"Python keyword/builtin <code>class</code>.",
+  "python import":"Python: <code>import</code>. Aniq misol so‘rang.",
+  "import python":"Python keyword/builtin <code>import</code>.",
+  "python from":"Python: <code>from</code>. Aniq misol so‘rang.",
+  "from python":"Python keyword/builtin <code>from</code>.",
+  "python return":"Python: <code>return</code>. Aniq misol so‘rang.",
+  "return python":"Python keyword/builtin <code>return</code>.",
+  "python list":"Python: <code>list</code>. Aniq misol so‘rang.",
+  "list python":"Python keyword/builtin <code>list</code>.",
+  "python dict":"Python: <code>dict</code>. Aniq misol so‘rang.",
+  "dict python":"Python keyword/builtin <code>dict</code>.",
+  "python tuple":"Python: <code>tuple</code>. Aniq misol so‘rang.",
+  "tuple python":"Python keyword/builtin <code>tuple</code>.",
+  "python set":"Python: <code>set</code>. Aniq misol so‘rang.",
+  "set python":"Python keyword/builtin <code>set</code>.",
+  "python len":"Python: <code>len</code>. Aniq misol so‘rang.",
+  "len python":"Python keyword/builtin <code>len</code>.",
+  "python range":"Python: <code>range</code>. Aniq misol so‘rang.",
+  "range python":"Python keyword/builtin <code>range</code>.",
+  "python open":"Python: <code>open</code>. Aniq misol so‘rang.",
+  "open python":"Python keyword/builtin <code>open</code>.",
+  "python with":"Python: <code>with</code>. Aniq misol so‘rang.",
+  "with python":"Python keyword/builtin <code>with</code>.",
+  "python try":"Python: <code>try</code>. Aniq misol so‘rang.",
+  "try python":"Python keyword/builtin <code>try</code>.",
+  "python except":"Python: <code>except</code>. Aniq misol so‘rang.",
+  "except python":"Python keyword/builtin <code>except</code>.",
+  "python lambda":"Python: <code>lambda</code>. Aniq misol so‘rang.",
+  "lambda python":"Python keyword/builtin <code>lambda</code>.",
+  "python true":"Python: <code>True</code>. Aniq misol so‘rang.",
+  "true python":"Python keyword/builtin <code>True</code>.",
+  "python false":"Python: <code>False</code>. Aniq misol so‘rang.",
+  "false python":"Python keyword/builtin <code>False</code>.",
+  "python none":"Python: <code>None</code>. Aniq misol so‘rang.",
+  "none python":"Python keyword/builtin <code>None</code>.",
+  "python append":"Python: <code>append</code>. Aniq misol so‘rang.",
+  "append python":"Python keyword/builtin <code>append</code>.",
+  "python input":"Python: <code>input</code>. Aniq misol so‘rang.",
+  "input python":"Python keyword/builtin <code>input</code>.",
+  "python int":"Python: <code>int</code>. Aniq misol so‘rang.",
+  "int python":"Python keyword/builtin <code>int</code>.",
+  "python str":"Python: <code>str</code>. Aniq misol so‘rang.",
+  "str python":"Python keyword/builtin <code>str</code>.",
+  "python float":"Python: <code>float</code>. Aniq misol so‘rang.",
+  "float python":"Python keyword/builtin <code>float</code>.",
+  "js const":"JavaScript: <code>const</code>.",
+  "javascript const":"JS: <code>const</code>.",
+  "js let":"JavaScript: <code>let</code>.",
+  "javascript let":"JS: <code>let</code>.",
+  "js var":"JavaScript: <code>var</code>.",
+  "javascript var":"JS: <code>var</code>.",
+  "js function":"JavaScript: <code>function</code>.",
+  "javascript function":"JS: <code>function</code>.",
+  "js return":"JavaScript: <code>return</code>.",
+  "javascript return":"JS: <code>return</code>.",
+  "js if":"JavaScript: <code>if</code>.",
+  "javascript if":"JS: <code>if</code>.",
+  "js else":"JavaScript: <code>else</code>.",
+  "javascript else":"JS: <code>else</code>.",
+  "js for":"JavaScript: <code>for</code>.",
+  "javascript for":"JS: <code>for</code>.",
+  "js while":"JavaScript: <code>while</code>.",
+  "javascript while":"JS: <code>while</code>.",
+  "js map":"JavaScript: <code>map</code>.",
+  "javascript map":"JS: <code>map</code>.",
+  "js filter":"JavaScript: <code>filter</code>.",
+  "javascript filter":"JS: <code>filter</code>.",
+  "js reduce":"JavaScript: <code>reduce</code>.",
+  "javascript reduce":"JS: <code>reduce</code>.",
+  "js promise":"JavaScript: <code>promise</code>.",
+  "javascript promise":"JS: <code>promise</code>.",
+  "js async":"JavaScript: <code>async</code>.",
+  "javascript async":"JS: <code>async</code>.",
+  "js await":"JavaScript: <code>await</code>.",
+  "javascript await":"JS: <code>await</code>.",
+  "js fetch":"JavaScript: <code>fetch</code>.",
+  "javascript fetch":"JS: <code>fetch</code>.",
+  "js document":"JavaScript: <code>document</code>.",
+  "javascript document":"JS: <code>document</code>.",
+  "js window":"JavaScript: <code>window</code>.",
+  "javascript window":"JS: <code>window</code>.",
+  "js queryselector":"JavaScript: <code>querySelector</code>.",
+  "javascript queryselector":"JS: <code>querySelector</code>.",
+  "js addeventlistener":"JavaScript: <code>addEventListener</code>.",
+  "javascript addeventlistener":"JS: <code>addEventListener</code>.",
+  "js json":"JavaScript: <code>JSON</code>.",
+  "javascript json":"JS: <code>JSON</code>.",
+  "js array":"JavaScript: <code>Array</code>.",
+  "javascript array":"JS: <code>Array</code>.",
+  "js object":"JavaScript: <code>Object</code>.",
+  "javascript object":"JS: <code>Object</code>.",
+  "js string":"JavaScript: <code>string</code>.",
+  "javascript string":"JS: <code>string</code>.",
+  "js number":"JavaScript: <code>number</code>.",
+  "javascript number":"JS: <code>number</code>.",
+  "js boolean":"JavaScript: <code>boolean</code>.",
+  "javascript boolean":"JS: <code>boolean</code>.",
+  "js null":"JavaScript: <code>null</code>.",
+  "javascript null":"JS: <code>null</code>.",
+  "js undefined":"JavaScript: <code>undefined</code>.",
+  "javascript undefined":"JS: <code>undefined</code>.",
+  "js class":"JavaScript: <code>class</code>.",
+  "javascript class":"JS: <code>class</code>.",
+  "js export":"JavaScript: <code>export</code>.",
+  "javascript export":"JS: <code>export</code>.",
+  "js import":"JavaScript: <code>import</code>.",
+  "javascript import":"JS: <code>import</code>.",
+  "ls nima":"Linux buyrug‘i: <code>ls</code>. Terminalda ishlatiladi.",
+  "ls command":"Linux/Unix command: <code>ls</code>.",
+  "kali ls":"Kali/Linux: <code>ls</code>.",
+  "cd nima":"Linux buyrug‘i: <code>cd</code>. Terminalda ishlatiladi.",
+  "cd command":"Linux/Unix command: <code>cd</code>.",
+  "kali cd":"Kali/Linux: <code>cd</code>.",
+  "pwd nima":"Linux buyrug‘i: <code>pwd</code>. Terminalda ishlatiladi.",
+  "pwd command":"Linux/Unix command: <code>pwd</code>.",
+  "kali pwd":"Kali/Linux: <code>pwd</code>.",
+  "cat nima":"Linux buyrug‘i: <code>cat</code>. Terminalda ishlatiladi.",
+  "cat command":"Linux/Unix command: <code>cat</code>.",
+  "kali cat":"Kali/Linux: <code>cat</code>.",
+  "echo nima":"Linux buyrug‘i: <code>echo</code>. Terminalda ishlatiladi.",
+  "echo command":"Linux/Unix command: <code>echo</code>.",
+  "kali echo":"Kali/Linux: <code>echo</code>.",
+  "mkdir nima":"Linux buyrug‘i: <code>mkdir</code>. Terminalda ishlatiladi.",
+  "mkdir command":"Linux/Unix command: <code>mkdir</code>.",
+  "kali mkdir":"Kali/Linux: <code>mkdir</code>.",
+  "rm nima":"Linux buyrug‘i: <code>rm</code>. Terminalda ishlatiladi.",
+  "rm command":"Linux/Unix command: <code>rm</code>.",
+  "kali rm":"Kali/Linux: <code>rm</code>.",
+  "cp nima":"Linux buyrug‘i: <code>cp</code>. Terminalda ishlatiladi.",
+  "cp command":"Linux/Unix command: <code>cp</code>.",
+  "kali cp":"Kali/Linux: <code>cp</code>.",
+  "mv nima":"Linux buyrug‘i: <code>mv</code>. Terminalda ishlatiladi.",
+  "mv command":"Linux/Unix command: <code>mv</code>.",
+  "kali mv":"Kali/Linux: <code>mv</code>.",
+  "touch nima":"Linux buyrug‘i: <code>touch</code>. Terminalda ishlatiladi.",
+  "touch command":"Linux/Unix command: <code>touch</code>.",
+  "kali touch":"Kali/Linux: <code>touch</code>.",
+  "chmod nima":"Linux buyrug‘i: <code>chmod</code>. Terminalda ishlatiladi.",
+  "chmod command":"Linux/Unix command: <code>chmod</code>.",
+  "kali chmod":"Kali/Linux: <code>chmod</code>.",
+  "chown nima":"Linux buyrug‘i: <code>chown</code>. Terminalda ishlatiladi.",
+  "chown command":"Linux/Unix command: <code>chown</code>.",
+  "kali chown":"Kali/Linux: <code>chown</code>.",
+  "ps nima":"Linux buyrug‘i: <code>ps</code>. Terminalda ishlatiladi.",
+  "ps command":"Linux/Unix command: <code>ps</code>.",
+  "kali ps":"Kali/Linux: <code>ps</code>.",
+  "kill nima":"Linux buyrug‘i: <code>kill</code>. Terminalda ishlatiladi.",
+  "kill command":"Linux/Unix command: <code>kill</code>.",
+  "kali kill":"Kali/Linux: <code>kill</code>.",
+  "top nima":"Linux buyrug‘i: <code>top</code>. Terminalda ishlatiladi.",
+  "top command":"Linux/Unix command: <code>top</code>.",
+  "kali top":"Kali/Linux: <code>top</code>.",
+  "htop nima":"Linux buyrug‘i: <code>htop</code>. Terminalda ishlatiladi.",
+  "htop command":"Linux/Unix command: <code>htop</code>.",
+  "kali htop":"Kali/Linux: <code>htop</code>.",
+  "grep nima":"Linux buyrug‘i: <code>grep</code>. Terminalda ishlatiladi.",
+  "grep command":"Linux/Unix command: <code>grep</code>.",
+  "kali grep":"Kali/Linux: <code>grep</code>.",
+  "find nima":"Linux buyrug‘i: <code>find</code>. Terminalda ishlatiladi.",
+  "find command":"Linux/Unix command: <code>find</code>.",
+  "kali find":"Kali/Linux: <code>find</code>.",
+  "awk nima":"Linux buyrug‘i: <code>awk</code>. Terminalda ishlatiladi.",
+  "awk command":"Linux/Unix command: <code>awk</code>.",
+  "kali awk":"Kali/Linux: <code>awk</code>.",
+  "sed nima":"Linux buyrug‘i: <code>sed</code>. Terminalda ishlatiladi.",
+  "sed command":"Linux/Unix command: <code>sed</code>.",
+  "kali sed":"Kali/Linux: <code>sed</code>.",
+  "curl nima":"Linux buyrug‘i: <code>curl</code>. Terminalda ishlatiladi.",
+  "curl command":"Linux/Unix command: <code>curl</code>.",
+  "kali curl":"Kali/Linux: <code>curl</code>.",
+  "wget nima":"Linux buyrug‘i: <code>wget</code>. Terminalda ishlatiladi.",
+  "wget command":"Linux/Unix command: <code>wget</code>.",
+  "kali wget":"Kali/Linux: <code>wget</code>.",
+  "ssh nima":"Linux buyrug‘i: <code>ssh</code>. Terminalda ishlatiladi.",
+  "ssh command":"Linux/Unix command: <code>ssh</code>.",
+  "kali ssh":"Kali/Linux: <code>ssh</code>.",
+  "scp nima":"Linux buyrug‘i: <code>scp</code>. Terminalda ishlatiladi.",
+  "scp command":"Linux/Unix command: <code>scp</code>.",
+  "kali scp":"Kali/Linux: <code>scp</code>.",
+  "tar nima":"Linux buyrug‘i: <code>tar</code>. Terminalda ishlatiladi.",
+  "tar command":"Linux/Unix command: <code>tar</code>.",
+  "kali tar":"Kali/Linux: <code>tar</code>.",
+  "zip nima":"Linux buyrug‘i: <code>zip</code>. Terminalda ishlatiladi.",
+  "zip command":"Linux/Unix command: <code>zip</code>.",
+  "kali zip":"Kali/Linux: <code>zip</code>.",
+  "unzip nima":"Linux buyrug‘i: <code>unzip</code>. Terminalda ishlatiladi.",
+  "unzip command":"Linux/Unix command: <code>unzip</code>.",
+  "kali unzip":"Kali/Linux: <code>unzip</code>.",
+  "df nima":"Linux buyrug‘i: <code>df</code>. Terminalda ishlatiladi.",
+  "df command":"Linux/Unix command: <code>df</code>.",
+  "kali df":"Kali/Linux: <code>df</code>.",
+  "du nima":"Linux buyrug‘i: <code>du</code>. Terminalda ishlatiladi.",
+  "du command":"Linux/Unix command: <code>du</code>.",
+  "kali du":"Kali/Linux: <code>du</code>.",
+  "free nima":"Linux buyrug‘i: <code>free</code>. Terminalda ishlatiladi.",
+  "free command":"Linux/Unix command: <code>free</code>.",
+  "kali free":"Kali/Linux: <code>free</code>.",
+  "uname nima":"Linux buyrug‘i: <code>uname</code>. Terminalda ishlatiladi.",
+  "uname command":"Linux/Unix command: <code>uname</code>.",
+  "kali uname":"Kali/Linux: <code>uname</code>.",
+  "whoami nima":"Linux buyrug‘i: <code>whoami</code>. Terminalda ishlatiladi.",
+  "whoami command":"Linux/Unix command: <code>whoami</code>.",
+  "kali whoami":"Kali/Linux: <code>whoami</code>.",
+  "sudo nima":"Linux buyrug‘i: <code>sudo</code>. Terminalda ishlatiladi.",
+  "sudo command":"Linux/Unix command: <code>sudo</code>.",
+  "kali sudo":"Kali/Linux: <code>sudo</code>.",
+  "apt nima":"Linux buyrug‘i: <code>apt</code>. Terminalda ishlatiladi.",
+  "apt command":"Linux/Unix command: <code>apt</code>.",
+  "kali apt":"Kali/Linux: <code>apt</code>.",
+  "apt-get nima":"Linux buyrug‘i: <code>apt-get</code>. Terminalda ishlatiladi.",
+  "apt-get command":"Linux/Unix command: <code>apt-get</code>.",
+  "kali apt-get":"Kali/Linux: <code>apt-get</code>.",
+  "yum nima":"Linux buyrug‘i: <code>yum</code>. Terminalda ishlatiladi.",
+  "yum command":"Linux/Unix command: <code>yum</code>.",
+  "kali yum":"Kali/Linux: <code>yum</code>.",
+  "dnf nima":"Linux buyrug‘i: <code>dnf</code>. Terminalda ishlatiladi.",
+  "dnf command":"Linux/Unix command: <code>dnf</code>.",
+  "kali dnf":"Kali/Linux: <code>dnf</code>.",
+  "systemctl nima":"Linux buyrug‘i: <code>systemctl</code>. Terminalda ishlatiladi.",
+  "systemctl command":"Linux/Unix command: <code>systemctl</code>.",
+  "kali systemctl":"Kali/Linux: <code>systemctl</code>.",
+  "service nima":"Linux buyrug‘i: <code>service</code>. Terminalda ishlatiladi.",
+  "service command":"Linux/Unix command: <code>service</code>.",
+  "kali service":"Kali/Linux: <code>service</code>.",
+  "journalctl nima":"Linux buyrug‘i: <code>journalctl</code>. Terminalda ishlatiladi.",
+  "journalctl command":"Linux/Unix command: <code>journalctl</code>.",
+  "kali journalctl":"Kali/Linux: <code>journalctl</code>.",
+  "ip nima":"Linux buyrug‘i: <code>ip</code>. Terminalda ishlatiladi.",
+  "ip command":"Linux/Unix command: <code>ip</code>.",
+  "kali ip":"Kali/Linux: <code>ip</code>.",
+  "ifconfig nima":"Linux buyrug‘i: <code>ifconfig</code>. Terminalda ishlatiladi.",
+  "ifconfig command":"Linux/Unix command: <code>ifconfig</code>.",
+  "kali ifconfig":"Kali/Linux: <code>ifconfig</code>.",
+  "ping nima":"Linux buyrug‘i: <code>ping</code>. Terminalda ishlatiladi.",
+  "ping command":"Linux/Unix command: <code>ping</code>.",
+  "kali ping":"Kali/Linux: <code>ping</code>.",
+  "netstat nima":"Linux buyrug‘i: <code>netstat</code>. Terminalda ishlatiladi.",
+  "netstat command":"Linux/Unix command: <code>netstat</code>.",
+  "kali netstat":"Kali/Linux: <code>netstat</code>.",
+  "ss nima":"Linux buyrug‘i: <code>ss</code>. Terminalda ishlatiladi.",
+  "ss command":"Linux/Unix command: <code>ss</code>.",
+  "kali ss":"Kali/Linux: <code>ss</code>.",
+  "nmap nima":"Linux buyrug‘i: <code>nmap</code>. Terminalda ishlatiladi.",
+  "nmap command":"Linux/Unix command: <code>nmap</code>.",
+  "kali nmap":"Kali/Linux: <code>nmap</code>.",
+  "tcpdump nima":"Linux buyrug‘i: <code>tcpdump</code>. Terminalda ishlatiladi.",
+  "tcpdump command":"Linux/Unix command: <code>tcpdump</code>.",
+  "kali tcpdump":"Kali/Linux: <code>tcpdump</code>.",
+  "git nima":"Linux buyrug‘i: <code>git</code>. Terminalda ishlatiladi.",
+  "git command":"Linux/Unix command: <code>git</code>.",
+  "kali git":"Kali/Linux: <code>git</code>.",
+  "docker nima":"Linux buyrug‘i: <code>docker</code>. Terminalda ishlatiladi.",
+  "docker command":"Linux/Unix command: <code>docker</code>.",
+  "kali docker":"Kali/Linux: <code>docker</code>.",
+  "nano nima":"Linux buyrug‘i: <code>nano</code>. Terminalda ishlatiladi.",
+  "nano command":"Linux/Unix command: <code>nano</code>.",
+  "kali nano":"Kali/Linux: <code>nano</code>.",
+  "vim nima":"Linux buyrug‘i: <code>vim</code>. Terminalda ishlatiladi.",
+  "vim command":"Linux/Unix command: <code>vim</code>.",
+  "kali vim":"Kali/Linux: <code>vim</code>.",
+  "less nima":"Linux buyrug‘i: <code>less</code>. Terminalda ishlatiladi.",
+  "less command":"Linux/Unix command: <code>less</code>.",
+  "kali less":"Kali/Linux: <code>less</code>.",
+  "head nima":"Linux buyrug‘i: <code>head</code>. Terminalda ishlatiladi.",
+  "head command":"Linux/Unix command: <code>head</code>.",
+  "kali head":"Kali/Linux: <code>head</code>.",
+  "tail nima":"Linux buyrug‘i: <code>tail</code>. Terminalda ishlatiladi.",
+  "tail command":"Linux/Unix command: <code>tail</code>.",
+  "kali tail":"Kali/Linux: <code>tail</code>.",
+  "wc nima":"Linux buyrug‘i: <code>wc</code>. Terminalda ishlatiladi.",
+  "wc command":"Linux/Unix command: <code>wc</code>.",
+  "kali wc":"Kali/Linux: <code>wc</code>.",
+  "sort nima":"Linux buyrug‘i: <code>sort</code>. Terminalda ishlatiladi.",
+  "sort command":"Linux/Unix command: <code>sort</code>.",
+  "kali sort":"Kali/Linux: <code>sort</code>.",
+  "uniq nima":"Linux buyrug‘i: <code>uniq</code>. Terminalda ishlatiladi.",
+  "uniq command":"Linux/Unix command: <code>uniq</code>.",
+  "kali uniq":"Kali/Linux: <code>uniq</code>.",
+  "diff nima":"Linux buyrug‘i: <code>diff</code>. Terminalda ishlatiladi.",
+  "diff command":"Linux/Unix command: <code>diff</code>.",
+  "kali diff":"Kali/Linux: <code>diff</code>.",
+  "man nima":"Linux buyrug‘i: <code>man</code>. Terminalda ishlatiladi.",
+  "man command":"Linux/Unix command: <code>man</code>.",
+  "kali man":"Kali/Linux: <code>man</code>.",
+  "history nima":"Linux buyrug‘i: <code>history</code>. Terminalda ishlatiladi.",
+  "history command":"Linux/Unix command: <code>history</code>.",
+  "kali history":"Kali/Linux: <code>history</code>.",
+  "clear nima":"Linux buyrug‘i: <code>clear</code>. Terminalda ishlatiladi.",
+  "clear command":"Linux/Unix command: <code>clear</code>.",
+  "kali clear":"Kali/Linux: <code>clear</code>.",
+  "export nima":"Linux buyrug‘i: <code>export</code>. Terminalda ishlatiladi.",
+  "export command":"Linux/Unix command: <code>export</code>.",
+  "kali export":"Kali/Linux: <code>export</code>.",
+  "env nima":"Linux buyrug‘i: <code>env</code>. Terminalda ishlatiladi.",
+  "env command":"Linux/Unix command: <code>env</code>.",
+  "kali env":"Kali/Linux: <code>env</code>.",
+  "which nima":"Linux buyrug‘i: <code>which</code>. Terminalda ishlatiladi.",
+  "which command":"Linux/Unix command: <code>which</code>.",
+  "kali which":"Kali/Linux: <code>which</code>.",
+  "whereis nima":"Linux buyrug‘i: <code>whereis</code>. Terminalda ishlatiladi.",
+  "whereis command":"Linux/Unix command: <code>whereis</code>.",
+  "kali whereis":"Kali/Linux: <code>whereis</code>.",
+  "ln nima":"Linux buyrug‘i: <code>ln</code>. Terminalda ishlatiladi.",
+  "ln command":"Linux/Unix command: <code>ln</code>.",
+  "kali ln":"Kali/Linux: <code>ln</code>.",
+  "mount nima":"Linux buyrug‘i: <code>mount</code>. Terminalda ishlatiladi.",
+  "mount command":"Linux/Unix command: <code>mount</code>.",
+  "kali mount":"Kali/Linux: <code>mount</code>.",
+  "umount nima":"Linux buyrug‘i: <code>umount</code>. Terminalda ishlatiladi.",
+  "umount command":"Linux/Unix command: <code>umount</code>.",
+  "kali umount":"Kali/Linux: <code>umount</code>.",
+  "crontab nima":"Linux buyrug‘i: <code>crontab</code>. Terminalda ishlatiladi.",
+  "crontab command":"Linux/Unix command: <code>crontab</code>.",
+  "kali crontab":"Kali/Linux: <code>crontab</code>.",
+  "useradd nima":"Linux buyrug‘i: <code>useradd</code>. Terminalda ishlatiladi.",
+  "useradd command":"Linux/Unix command: <code>useradd</code>.",
+  "kali useradd":"Kali/Linux: <code>useradd</code>.",
+  "passwd nima":"Linux buyrug‘i: <code>passwd</code>. Terminalda ishlatiladi.",
+  "passwd command":"Linux/Unix command: <code>passwd</code>.",
+  "kali passwd":"Kali/Linux: <code>passwd</code>.",
+  "groupadd nima":"Linux buyrug‘i: <code>groupadd</code>. Terminalda ishlatiladi.",
+  "groupadd command":"Linux/Unix command: <code>groupadd</code>.",
+  "kali groupadd":"Kali/Linux: <code>groupadd</code>.",
+  "id nima":"Linux buyrug‘i: <code>id</code>. Terminalda ishlatiladi.",
+  "id command":"Linux/Unix command: <code>id</code>.",
+  "kali id":"Kali/Linux: <code>id</code>.",
+  "date nima":"Linux buyrug‘i: <code>date</code>. Terminalda ishlatiladi.",
+  "date command":"Linux/Unix command: <code>date</code>.",
+  "kali date":"Kali/Linux: <code>date</code>.",
+  "cal nima":"Linux buyrug‘i: <code>cal</code>. Terminalda ishlatiladi.",
+  "cal command":"Linux/Unix command: <code>cal</code>.",
+  "kali cal":"Kali/Linux: <code>cal</code>.",
+  "uptime nima":"Linux buyrug‘i: <code>uptime</code>. Terminalda ishlatiladi.",
+  "uptime command":"Linux/Unix command: <code>uptime</code>.",
+  "kali uptime":"Kali/Linux: <code>uptime</code>.",
+  "reboot nima":"Linux buyrug‘i: <code>reboot</code>. Terminalda ishlatiladi.",
+  "reboot command":"Linux/Unix command: <code>reboot</code>.",
+  "kali reboot":"Kali/Linux: <code>reboot</code>.",
+  "shutdown nima":"Linux buyrug‘i: <code>shutdown</code>. Terminalda ishlatiladi.",
+  "shutdown command":"Linux/Unix command: <code>shutdown</code>.",
+  "kali shutdown":"Kali/Linux: <code>shutdown</code>.",
+  "hostname nima":"Linux buyrug‘i: <code>hostname</code>. Terminalda ishlatiladi.",
+  "hostname command":"Linux/Unix command: <code>hostname</code>.",
+  "kali hostname":"Kali/Linux: <code>hostname</code>.",
+  "traceroute nima":"Linux buyrug‘i: <code>traceroute</code>. Terminalda ishlatiladi.",
+  "traceroute command":"Linux/Unix command: <code>traceroute</code>.",
+  "kali traceroute":"Kali/Linux: <code>traceroute</code>.",
+  "dig nima":"Linux buyrug‘i: <code>dig</code>. Terminalda ishlatiladi.",
+  "dig command":"Linux/Unix command: <code>dig</code>.",
+  "kali dig":"Kali/Linux: <code>dig</code>.",
+  "nslookup nima":"Linux buyrug‘i: <code>nslookup</code>. Terminalda ishlatiladi.",
+  "nslookup command":"Linux/Unix command: <code>nslookup</code>.",
+  "kali nslookup":"Kali/Linux: <code>nslookup</code>.",
+  "firewall-cmd nima":"Linux buyrug‘i: <code>firewall-cmd</code>. Terminalda ishlatiladi.",
+  "firewall-cmd command":"Linux/Unix command: <code>firewall-cmd</code>.",
+  "kali firewall-cmd":"Kali/Linux: <code>firewall-cmd</code>.",
+  "ufw nima":"Linux buyrug‘i: <code>ufw</code>. Terminalda ishlatiladi.",
+  "ufw command":"Linux/Unix command: <code>ufw</code>.",
+  "kali ufw":"Kali/Linux: <code>ufw</code>.",
+  "iptables nima":"Linux buyrug‘i: <code>iptables</code>. Terminalda ishlatiladi.",
+  "iptables command":"Linux/Unix command: <code>iptables</code>.",
+  "kali iptables":"Kali/Linux: <code>iptables</code>.",
+  "systemctl status nima":"Linux buyrug‘i: <code>systemctl status</code>. Terminalda ishlatiladi.",
+  "systemctl status command":"Linux/Unix command: <code>systemctl status</code>.",
+  "kali systemctl status":"Kali/Linux: <code>systemctl status</code>.",
+  "journalctl -xe nima":"Linux buyrug‘i: <code>journalctl -xe</code>. Terminalda ishlatiladi.",
+  "journalctl -xe command":"Linux/Unix command: <code>journalctl -xe</code>.",
+  "kali journalctl -xe":"Kali/Linux: <code>journalctl -xe</code>.",
+  "windows dir":"Windows: <code>dir</code>.",
+  "dir windows":"CMD/PowerShell: <code>dir</code>.",
+  "windows cd":"Windows: <code>cd</code>.",
+  "cd windows":"CMD/PowerShell: <code>cd</code>.",
+  "windows copy":"Windows: <code>copy</code>.",
+  "copy windows":"CMD/PowerShell: <code>copy</code>.",
+  "windows move":"Windows: <code>move</code>.",
+  "move windows":"CMD/PowerShell: <code>move</code>.",
+  "windows del":"Windows: <code>del</code>.",
+  "del windows":"CMD/PowerShell: <code>del</code>.",
+  "windows mkdir":"Windows: <code>mkdir</code>.",
+  "mkdir windows":"CMD/PowerShell: <code>mkdir</code>.",
+  "windows rmdir":"Windows: <code>rmdir</code>.",
+  "rmdir windows":"CMD/PowerShell: <code>rmdir</code>.",
+  "windows type":"Windows: <code>type</code>.",
+  "type windows":"CMD/PowerShell: <code>type</code>.",
+  "windows cls":"Windows: <code>cls</code>.",
+  "cls windows":"CMD/PowerShell: <code>cls</code>.",
+  "windows ipconfig":"Windows: <code>ipconfig</code>.",
+  "ipconfig windows":"CMD/PowerShell: <code>ipconfig</code>.",
+  "windows ping":"Windows: <code>ping</code>.",
+  "ping windows":"CMD/PowerShell: <code>ping</code>.",
+  "windows tracert":"Windows: <code>tracert</code>.",
+  "tracert windows":"CMD/PowerShell: <code>tracert</code>.",
+  "windows netstat":"Windows: <code>netstat</code>.",
+  "netstat windows":"CMD/PowerShell: <code>netstat</code>.",
+  "windows tasklist":"Windows: <code>tasklist</code>.",
+  "tasklist windows":"CMD/PowerShell: <code>tasklist</code>.",
+  "windows taskkill":"Windows: <code>taskkill</code>.",
+  "taskkill windows":"CMD/PowerShell: <code>taskkill</code>.",
+  "windows sfc":"Windows: <code>sfc</code>.",
+  "sfc windows":"CMD/PowerShell: <code>sfc</code>.",
+  "windows chkdsk":"Windows: <code>chkdsk</code>.",
+  "chkdsk windows":"CMD/PowerShell: <code>chkdsk</code>.",
+  "windows systeminfo":"Windows: <code>systeminfo</code>.",
+  "systeminfo windows":"CMD/PowerShell: <code>systeminfo</code>.",
+  "windows hostname":"Windows: <code>hostname</code>.",
+  "hostname windows":"CMD/PowerShell: <code>hostname</code>.",
+  "windows whoami":"Windows: <code>whoami</code>.",
+  "whoami windows":"CMD/PowerShell: <code>whoami</code>.",
+  "windows shutdown":"Windows: <code>shutdown</code>.",
+  "shutdown windows":"CMD/PowerShell: <code>shutdown</code>.",
+  "windows restart":"Windows: <code>restart</code>.",
+  "restart windows":"CMD/PowerShell: <code>restart</code>.",
+  "windows notepad":"Windows: <code>notepad</code>.",
+  "notepad windows":"CMD/PowerShell: <code>notepad</code>.",
+  "windows explorer":"Windows: <code>explorer</code>.",
+  "explorer windows":"CMD/PowerShell: <code>explorer</code>.",
+  "windows regedit":"Windows: <code>regedit</code>.",
+  "regedit windows":"CMD/PowerShell: <code>regedit</code>.",
+  "windows msconfig":"Windows: <code>msconfig</code>.",
+  "msconfig windows":"CMD/PowerShell: <code>msconfig</code>.",
+  "windows services.msc":"Windows: <code>services.msc</code>.",
+  "services.msc windows":"CMD/PowerShell: <code>services.msc</code>.",
+  "windows devmgmt.msc":"Windows: <code>devmgmt.msc</code>.",
+  "devmgmt.msc windows":"CMD/PowerShell: <code>devmgmt.msc</code>.",
+  "windows control":"Windows: <code>control</code>.",
+  "control windows":"CMD/PowerShell: <code>control</code>.",
+  "windows powershell":"Windows: <code>powershell</code>.",
+  "powershell windows":"CMD/PowerShell: <code>powershell</code>.",
+  "windows cmd":"Windows: <code>cmd</code>.",
+  "cmd windows":"CMD/PowerShell: <code>cmd</code>.",
+  "windows winget":"Windows: <code>winget</code>.",
+  "winget windows":"CMD/PowerShell: <code>winget</code>.",
+  "windows wmic":"Windows: <code>wmic</code>.",
+  "wmic windows":"CMD/PowerShell: <code>wmic</code>.",
+  "windows format":"Windows: <code>format</code>.",
+  "format windows":"CMD/PowerShell: <code>format</code>.",
+  "windows diskpart":"Windows: <code>diskpart</code>.",
+  "diskpart windows":"CMD/PowerShell: <code>diskpart</code>.",
+  "yer":"Yer Quyosh tizimidagi 3-sayyora.",
+  "earth":"Earth is the third planet from the Sun.",
+  "oy":"Oy — Yerning tabiiy yo‘ldoshi.",
+  "moon":"The Moon is Earth's natural satellite.",
+  "quyosh":"Quyosh — yulduz, Quyosh tizimi markazi.",
+  "sun":"The Sun is a star at the center of the Solar System.",
+  "suv":"Suv — H2O.",
+  "water":"Water is H₂O.",
+  "havo":"Havo asosan azot va kisloroddan iborat.",
+  "ai nima":"AI — sun'iy intellekt.",
+  "what is ai":"AI means artificial intelligence.",
+  "internet nima":"Internet — global tarmoq.",
+  "what is internet":"The Internet is a global network of computers.",
+  "0 nima":"0 — butun son.",
+  "1 nima":"1 — butun son.",
+  "2 nima":"2 — butun son.",
+  "3 nima":"3 — butun son.",
+  "4 nima":"4 — butun son.",
+  "5 nima":"5 — butun son.",
+  "6 nima":"6 — butun son.",
+  "7 nima":"7 — butun son.",
+  "8 nima":"8 — butun son.",
+  "9 nima":"9 — butun son.",
+  "10 nima":"10 — butun son.",
+  "11 nima":"11 — butun son.",
+  "12 nima":"12 — butun son.",
+  "13 nima":"13 — butun son.",
+  "14 nima":"14 — butun son.",
+  "15 nima":"15 — butun son.",
+  "16 nima":"16 — butun son.",
+  "17 nima":"17 — butun son.",
+  "18 nima":"18 — butun son.",
+  "19 nima":"19 — butun son.",
+  "20 nima":"20 — butun son.",
+  "21 nima":"21 — butun son.",
+  "22 nima":"22 — butun son.",
+  "23 nima":"23 — butun son.",
+  "24 nima":"24 — butun son.",
+  "25 nima":"25 — butun son.",
+  "26 nima":"26 — butun son.",
+  "27 nima":"27 — butun son.",
+  "28 nima":"28 — butun son.",
+  "29 nima":"29 — butun son.",
+  "30 nima":"30 — butun son.",
+  "31 nima":"31 — butun son.",
+  "32 nima":"32 — butun son.",
+  "33 nima":"33 — butun son.",
+  "34 nima":"34 — butun son.",
+  "35 nima":"35 — butun son.",
+  "36 nima":"36 — butun son.",
+  "37 nima":"37 — butun son.",
+  "38 nima":"38 — butun son.",
+  "39 nima":"39 — butun son.",
+  "40 nima":"40 — butun son.",
+  "41 nima":"41 — butun son.",
+  "42 nima":"42 — butun son.",
+  "43 nima":"43 — butun son.",
+  "44 nima":"44 — butun son.",
+  "45 nima":"45 — butun son.",
+  "46 nima":"46 — butun son.",
+  "47 nima":"47 — butun son.",
+  "48 nima":"48 — butun son.",
+  "49 nima":"49 — butun son.",
+  "50 nima":"50 — butun son.",
+  "51 nima":"51 — butun son.",
+  "52 nima":"52 — butun son.",
+  "53 nima":"53 — butun son.",
+  "54 nima":"54 — butun son.",
+  "55 nima":"55 — butun son.",
+  "56 nima":"56 — butun son.",
+  "57 nima":"57 — butun son.",
+  "58 nima":"58 — butun son.",
+  "59 nima":"59 — butun son.",
+  "60 nima":"60 — butun son.",
+  "61 nima":"61 — butun son.",
+  "62 nima":"62 — butun son.",
+  "63 nima":"63 — butun son.",
+  "64 nima":"64 — butun son.",
+  "65 nima":"65 — butun son.",
+  "66 nima":"66 — butun son.",
+  "67 nima":"67 — butun son.",
+  "68 nima":"68 — butun son.",
+  "69 nima":"69 — butun son.",
+  "70 nima":"70 — butun son.",
+  "71 nima":"71 — butun son.",
+  "72 nima":"72 — butun son.",
+  "73 nima":"73 — butun son.",
+  "74 nima":"74 — butun son.",
+  "75 nima":"75 — butun son.",
+  "76 nima":"76 — butun son.",
+  "77 nima":"77 — butun son.",
+  "78 nima":"78 — butun son.",
+  "79 nima":"79 — butun son.",
+  "80 nima":"80 — butun son.",
+  "81 nima":"81 — butun son.",
+  "82 nima":"82 — butun son.",
+  "83 nima":"83 — butun son.",
+  "84 nima":"84 — butun son.",
+  "85 nima":"85 — butun son.",
+  "86 nima":"86 — butun son.",
+  "87 nima":"87 — butun son.",
+  "88 nima":"88 — butun son.",
+  "89 nima":"89 — butun son.",
+  "90 nima":"90 — butun son.",
+  "91 nima":"91 — butun son.",
+  "92 nima":"92 — butun son.",
+  "93 nima":"93 — butun son.",
+  "94 nima":"94 — butun son.",
+  "95 nima":"95 — butun son.",
+  "96 nima":"96 — butun son.",
+  "97 nima":"97 — butun son.",
+  "98 nima":"98 — butun son.",
+  "99 nima":"99 — butun son.",
+  "100 nima":"100 — butun son.",
+  "yordam":"Matematika, kod yoki savol yozing.",
+  "help":"Ask math, code, or a question.",
+  "rahmat":"Arzimaydi!",
+  "thanks":"You're welcome!",
+  "thank you":"You're welcome!",
+  "xayr":"Xayr!",
+  "bye":"Goodbye!",
+  "creator":"Yaratuvchi: Akrom.",
+  "akrom":"Akrom — AkromAI yaratuvchisi.",
+  "who made you":"My creator is Akrom.",
+  "variable nima":"VARIABLE haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is variable":"variable is an IT/programming concept. Ask a more specific question.",
+  "variable nedir":"variable bir IT kavramıdır.",
+  "variable это":"variable — понятие из IT.",
+  "function nima":"FUNCTION haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is function":"function is an IT/programming concept. Ask a more specific question.",
+  "function nedir":"function bir IT kavramıdır.",
+  "function это":"function — понятие из IT.",
+  "loop nima":"LOOP haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is loop":"loop is an IT/programming concept. Ask a more specific question.",
+  "loop nedir":"loop bir IT kavramıdır.",
+  "loop это":"loop — понятие из IT.",
+  "array nima":"ARRAY haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is array":"array is an IT/programming concept. Ask a more specific question.",
+  "array nedir":"array bir IT kavramıdır.",
+  "array это":"array — понятие из IT.",
+  "object nima":"OBJECT haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is object":"object is an IT/programming concept. Ask a more specific question.",
+  "object nedir":"object bir IT kavramıdır.",
+  "object это":"object — понятие из IT.",
+  "class nima":"CLASS haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is class":"class is an IT/programming concept. Ask a more specific question.",
+  "class nedir":"class bir IT kavramıdır.",
+  "class это":"class — понятие из IT.",
+  "string nima":"STRING haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is string":"string is an IT/programming concept. Ask a more specific question.",
+  "string nedir":"string bir IT kavramıdır.",
+  "string это":"string — понятие из IT.",
+  "number nima":"NUMBER haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is number":"number is an IT/programming concept. Ask a more specific question.",
+  "number nedir":"number bir IT kavramıdır.",
+  "number это":"number — понятие из IT.",
+  "boolean nima":"BOOLEAN haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is boolean":"boolean is an IT/programming concept. Ask a more specific question.",
+  "boolean nedir":"boolean bir IT kavramıdır.",
+  "boolean это":"boolean — понятие из IT.",
+  "null nima":"NULL haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is null":"null is an IT/programming concept. Ask a more specific question.",
+  "null nedir":"null bir IT kavramıdır.",
+  "null это":"null — понятие из IT.",
+  "error nima":"ERROR haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is error":"error is an IT/programming concept. Ask a more specific question.",
+  "error nedir":"error bir IT kavramıdır.",
+  "error это":"error — понятие из IT.",
+  "bug nima":"BUG haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is bug":"bug is an IT/programming concept. Ask a more specific question.",
+  "bug nedir":"bug bir IT kavramıdır.",
+  "bug это":"bug — понятие из IT.",
+  "debug nima":"DEBUG haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is debug":"debug is an IT/programming concept. Ask a more specific question.",
+  "debug nedir":"debug bir IT kavramıdır.",
+  "debug это":"debug — понятие из IT.",
+  "compile nima":"COMPILE haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is compile":"compile is an IT/programming concept. Ask a more specific question.",
+  "compile nedir":"compile bir IT kavramıdır.",
+  "compile это":"compile — понятие из IT.",
+  "runtime nima":"RUNTIME haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is runtime":"runtime is an IT/programming concept. Ask a more specific question.",
+  "runtime nedir":"runtime bir IT kavramıdır.",
+  "runtime это":"runtime — понятие из IT.",
+  "server nima":"SERVER haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is server":"server is an IT/programming concept. Ask a more specific question.",
+  "server nedir":"server bir IT kavramıdır.",
+  "server это":"server — понятие из IT.",
+  "client nima":"CLIENT haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is client":"client is an IT/programming concept. Ask a more specific question.",
+  "client nedir":"client bir IT kavramıdır.",
+  "client это":"client — понятие из IT.",
+  "api nima":"API haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is api":"api is an IT/programming concept. Ask a more specific question.",
+  "api nedir":"api bir IT kavramıdır.",
+  "api это":"api — понятие из IT.",
+  "json nima":"JSON haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is json":"json is an IT/programming concept. Ask a more specific question.",
+  "json nedir":"json bir IT kavramıdır.",
+  "json это":"json — понятие из IT.",
+  "xml nima":"XML haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is xml":"xml is an IT/programming concept. Ask a more specific question.",
+  "xml nedir":"xml bir IT kavramıdır.",
+  "xml это":"xml — понятие из IT.",
+  "http nima":"HTTP haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is http":"http is an IT/programming concept. Ask a more specific question.",
+  "http nedir":"http bir IT kavramıdır.",
+  "http это":"http — понятие из IT.",
+  "https nima":"HTTPS haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is https":"https is an IT/programming concept. Ask a more specific question.",
+  "https nedir":"https bir IT kavramıdır.",
+  "https это":"https — понятие из IT.",
+  "dom nima":"DOM haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is dom":"dom is an IT/programming concept. Ask a more specific question.",
+  "dom nedir":"dom bir IT kavramıdır.",
+  "dom это":"dom — понятие из IT.",
+  "event nima":"EVENT haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is event":"event is an IT/programming concept. Ask a more specific question.",
+  "event nedir":"event bir IT kavramıdır.",
+  "event это":"event — понятие из IT.",
+  "callback nima":"CALLBACK haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is callback":"callback is an IT/programming concept. Ask a more specific question.",
+  "callback nedir":"callback bir IT kavramıdır.",
+  "callback это":"callback — понятие из IT.",
+  "promise nima":"PROMISE haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is promise":"promise is an IT/programming concept. Ask a more specific question.",
+  "promise nedir":"promise bir IT kavramıdır.",
+  "promise это":"promise — понятие из IT.",
+  "thread nima":"THREAD haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is thread":"thread is an IT/programming concept. Ask a more specific question.",
+  "thread nedir":"thread bir IT kavramıdır.",
+  "thread это":"thread — понятие из IT.",
+  "process nima":"PROCESS haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is process":"process is an IT/programming concept. Ask a more specific question.",
+  "process nedir":"process bir IT kavramıdır.",
+  "process это":"process — понятие из IT.",
+  "memory nima":"MEMORY haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is memory":"memory is an IT/programming concept. Ask a more specific question.",
+  "memory nedir":"memory bir IT kavramıdır.",
+  "memory это":"memory — понятие из IT.",
+  "cpu nima":"CPU haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is cpu":"cpu is an IT/programming concept. Ask a more specific question.",
+  "cpu nedir":"cpu bir IT kavramıdır.",
+  "cpu это":"cpu — понятие из IT.",
+  "gpu nima":"GPU haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+  "what is gpu":"gpu is an IT/programming concept. Ask a more specific question.",
+  "gpu nedir":"gpu bir IT kavramıdır.",
+  "gpu это":"gpu — понятие из IT.",
+  "disk nima":"DISK haqida qisqa: bu dasturlash/IT atamasi. Aniqroq savol bering.",
+};
+function kbLookup(text){
+  const t=String(text||'').toLowerCase().trim().replace(/[?!.,]+$/,'');
+  if(!t)return null;
+  if(AKROM_KB[t])return AKROM_KB[t];
+  // partial: key contained in text or text in key
+  for(const k in AKROM_KB){
+    if(t===k||t.indexOf(k)>=0||k.indexOf(t)>=0){
+      if(k.length>=3&&t.length>=3)return AKROM_KB[k];
+    }
+  }
+  return null;
+}
+function getKnowledge(text){
+  const t=text.toLowerCase();
+  if(/ai\s*nima|what is ai|sun.?iy intellekt/i.test(t))return '<strong>AI</strong> — mashinalarning o‘rganish va javob berish qobiliyati. AkromAI oddiy qoidalar bilan ishlaydi.';
+  if(/internet\s*nima|what is internet/i.test(t))return '<strong>Internet</strong> — global tarmoq.';
+  if(/qwen|lm\s*studio|netlify/i.test(t))return 'Qwen — AI model oilasi. LM Studio — lokal model ishlatish. Netlify — bepul hosting.';
+  return null;
+}
+
+function getQuickFacts(text){
+  const lower=text.toLowerCase().trim();
+  if(/what (the )?date|today'?s date|sana|bugun qaysi kun|какое сегодня|bugungi sana|what day is it|qaysi kun|current date/i.test(lower)){
+    const d=new Date();
+    const opts={weekday:'long',year:'numeric',month:'long',day:'numeric'};
+    try{
+      const loc={en:'en-US',uz:'uz-UZ',ru:'ru-RU',tr:'tr-TR',kk:'kk-KZ',ar:'ar-SA',pt:'pt-PT','pt-BR':'pt-BR',sw:'sw-KE'}[currentLang]||'en-US';
+      return d.toLocaleDateString(loc,opts)+' ('+d.toISOString().slice(0,10)+')';
+    }catch(e){return d.toDateString()}
+  }
+  if(/what time|soat necha|который час|saat kaç|vaqt/i.test(lower)&&!/timezone|history/i.test(lower)){
+    const d=new Date();
+    return d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit',second:'2-digit'});
+  }
+  return null;
+}
+function generateReply(text){
+  const lower=text.toLowerCase().trim();
+  let kb=kbLookup(text);if(kb)return kb;
+  let qf=getQuickFacts(text);if(qf)return qf;
+  let math=trySolveMath(text);if(math)return math;
+  let osReply=getOSCodeReply(text);if(osReply)return osReply;
+  let code=getCodeReply(text);if(code)return code;
+  let know=getKnowledge(text);if(know)return know;
+  const pack={
+    uz:{c:'Meni yaratuvchim <strong>Akrom</strong>.',w:'Men <strong>AkromAI</strong>. Yaratuvchi: Akrom.',h:'Salom! 👋 Matematika, kod yoki savol yozing.',t:'Arzimaydi!',d:function(x){return 'Savol: <em>"'+escapeHtml(x)+'"</em><br>Matematika, HTML/CSS/JS/Python yoki aniqroq savol yozing.'}},
+    en:{c:'My creator is <strong>Akrom</strong>.',w:'I am <strong>AkromAI</strong>. Creator: Akrom.',h:'Hello! 👋 Ask math, code, or a question.',t:'You\'re welcome!',d:function(x){return 'Question: <em>"'+escapeHtml(x)+'"</em><br>Try math, HTML/CSS/JS/Python, or a clearer question.'}},
+    ru:{c:'Мой создатель — <strong>Akrom</strong>.',w:'Я <strong>AkromAI</strong>. Создатель: Akrom.',h:'Привет! 👋 Напишите математику, код или вопрос.',t:'Пожалуйста!',d:function(x){return 'Вопрос: <em>"'+escapeHtml(x)+'"</em><br>Напишите математику или код.'}},
+    tr:{c:'Oluşturucum <strong>Akrom</strong>.',w:'Ben <strong>AkromAI</strong>. Beni Akrom oluşturdu.',h:'Merhaba! 👋 Matematik, kod veya soru yazın.',t:'Rica ederim!',d:function(x){return 'Soru: <em>"'+escapeHtml(x)+'"</em><br>Matematik, HTML/CSS/JS/Python veya daha net bir soru yazın.'}},
+    kk:{c:'Жасаушым — <strong>Akrom</strong>.',w:'Мен <strong>AkromAI</strong>. Жасаушым: Akrom.',h:'Сәлем! 👋 Математика, код немесе сұрақ жазыңыз.',t:'Оқасы жоқ!',d:function(x){return 'Сұрақ: <em>"'+escapeHtml(x)+'"</em><br>Математика, HTML/CSS/JS/Python немесе нақтырақ сұрақ жазыңыз.'}},
+    ar:{c:'منشئى هو <strong>Akrom</strong>.',w:'أنا <strong>AkromAI</strong>. أنشأني Akrom.',h:'مرحبا! 👋 اكتب رياضيات أو كود أو سؤالاً.',t:'عفوا!',d:function(x){return 'السؤال: <em>"'+escapeHtml(x)+'"</em><br>اكتب رياضيات أو HTML/CSS/JS/Python أو سؤالاً أوضح.'}},
+    pt:{c:'O meu criador é o <strong>Akrom</strong>.',w:'Sou o <strong>AkromAI</strong>. Criador: Akrom.',h:'Olá! 👋 Escreva matemática, código ou uma pergunta.',t:'De nada!',d:function(x){return 'Pergunta: <em>"'+escapeHtml(x)+'"</em><br>Escreva matemática, HTML/CSS/JS/Python ou uma pergunta mais clara.'}},
+    'pt-BR':{c:'Meu criador é o <strong>Akrom</strong>.',w:'Eu sou o <strong>AkromAI</strong>. Criador: Akrom.',h:'Oi! 👋 Escreva matemática, código ou uma pergunta.',t:'De nada!',d:function(x){return 'Pergunta: <em>"'+escapeHtml(x)+'"</em><br>Escreva matemática, HTML/CSS/JS/Python ou uma pergunta mais clara.'}},
+    sw:{c:'Muundaji wangu ni <strong>Akrom</strong>.',w:'Mimi ni <strong>AkromAI</strong>. Muundaji: Akrom.',h:'Habari! 👋 Andika hisabati, msimbo au swali.',t:'Karibu!',d:function(x){return 'Swali: <em>"'+escapeHtml(x)+'"</em><br>Andika hisabati, HTML/CSS/JS/Python au swali wazi zaidi.'}}
+  };
+  const P=pack[currentLang]||pack.uz;
+  // --- Xorazm + fuzzy casual phrases ---
+  function normCasual(s){
+    return String(s||'').toLowerCase()
+      .replace(/[ʼ‘’`']/g,"'")
+      .replace(/[?!.,;:]+/g,' ')
+      .replace(/\s+/g,' ')
+      .trim();
+  }
+  function onlyLetters(s){return normCasual(s).replace(/[^a-zа-яёўғқҳәөүңі\s']/gi,'').replace(/\s+/g,'')}
+  // very tolerant: each letter may be wrong (any char), optional chars
+  function fuzzyLike(input, pattern){
+    // pattern uses letters; each letter becomes .? with optional
+    const esc=pattern.replace(/\s+/g,' ').trim().split('').map(function(ch){
+      if(ch===' ')return '\\s*';
+      if(ch==="'")return "['’`]?";
+      return '[^\\s]?';
+    }).join('');
+    try{return new RegExp('^\\s*'+esc+'\\s*$','i').test(input)}catch(e){return false}
+  }
+  function hasFuzzyPhrase(input, phrases){
+    const n=onlyLetters(input);
+    const compact=n.replace(/\s/g,'');
+    for(let i=0;i<phrases.length;i++){
+      const p=phrases[i];
+      if(n.indexOf(p)>=0||compact.indexOf(p.replace(/\s/g,''))>=0)return true;
+      if(fuzzyLike(n,p))return true;
+      // Levenshtein-ish short: if lengths close and many shared chars
+      const pc=p.replace(/\s/g,'');
+      if(Math.abs(compact.length-pc.length)<=3 && compact.length>=4){
+        let hit=0;
+        for(let j=0;j<pc.length;j++){if(compact.indexOf(pc[j])>=0)hit++}
+        if(hit/pc.length>=0.7)return true;
+      }
+    }
+    return false;
+  }
+  const naGapPhrases=['na gap','nima gap','nima gaplar','nimagap','nagap','ne gap','nim gap'];
+  const howPhrases=[
+    'nichiksan','nichiqsan','nichik san','qalaysan','qalay san','qalay','yahshi mi san','yaxshi mi san',
+    'yahshimi san','yaxshimi','yahshimisiz','yaxshimisiz','ahshi mi san','yahshmisan','yaxshisan',
+    'ozingchi','o zingchi',"o'zingchi",'senchi','san chi','qande','qandaysan','qanday',
+    'how are you','how r u','kak dela','nasilsin','ne haber','habari gani'
+  ];
+  const byePhrases=['hayr','xayr','ko rishguncha',"ko'rishguncha",'salomat bol',"salomat bo'l",'goodbye','bye'];
+  const thanksPhrases=['rahmat','raxmat','tashakkur','thanks','thank you','spasibo'];
+
+  if(hasFuzzyPhrase(lower, naGapPhrases) || /n[aei]?[\s]*g[aeo]?p/i.test(lower)){
+    const ng={
+      uz:'Yaxshi, zo‘r! 👍 O‘zingchi? (Xorazmcha ham tushaman)',
+      en:'All good, great! 👍 And you?',
+      ru:'Всё хорошо, отлично! 👍 А ты?',
+      tr:'İyi, harika! 👍 Sen nasılsın?',
+      kk:'Жақсы, керемет! 👍 Өзіңше?',
+      ar:'بخير، ممتاز! 👍 وأنت؟',
+      pt:'Tudo bem, ótimo! 👍 E tu?',
+      'pt-BR':'Tudo bem, ótimo! 👍 E você?',
+      sw:'Nzuri sana! 👍 Na wewe?'
+    };
+    return ng[currentLang]||ng.en;
+  }
+  if(hasFuzzyPhrase(lower, howPhrases) || /y.?[ae].?[hxsy].?[sş].?.?\s*m.?[iy].?\s*s.?[ae].?n/i.test(lower) || /n.?[iy].?ch.?[iy].?[kq].?\s*s.?[ae].?n/i.test(lower) || /q.?[ae].?l.?[ae].?y.?\s*s.?[ae].?n/i.test(lower)){
+    const hi={
+      uz:'Yaxshiman, rahmat! Zo‘r! 😊 San-chi, qalaysan? (Xorazmcha: yahshi mi san — tushaman)',
+      en:'I\'m good, thanks! Great! 😊 How are you?',
+      ru:'Хорошо, спасибо! Отлично! 😊 А ты как?',
+      tr:'İyiyim, teşekkürler! Harika! 😊 Sen nasılsın?',
+      kk:'Жақсымын, рахмет! Керемет! 😊 Өзің қалайсың?',
+      ar:'أنا بخير، شكراً! ممتاز! 😊 وأنت كيف حالك؟',
+      pt:'Estou bem, obrigado! Ótimo! 😊 E tu?',
+      'pt-BR':'Estou bem, valeu! Ótimo! 😊 E você?',
+      sw:'Nzuri, asante! Poa! 😊 Na wewe?'
+    };
+    return hi[currentLang]||hi.en;
+  }
+  if(hasFuzzyPhrase(lower, byePhrases)){
+    const bye={uz:'Xayr! Ko‘rishguncha! 👋',en:'Bye! See you! 👋',ru:'Пока! Увидимся! 👋',tr:'Hoşça kal! 👋',kk:'Сау бол! 👋',ar:'مع السلامة! 👋',pt:'Adeus! 👋','pt-BR':'Tchau! 👋',sw:'Kwaheri! 👋'};
+    return bye[currentLang]||bye.en;
+  }
+  if(hasFuzzyPhrase(lower, thanksPhrases)){
+    const th={uz:'Arzimaydi! 😊',en:'You\'re welcome! 😊',ru:'Пожалуйста! 😊',tr:'Rica ederim! 😊',kk:'Оқасы жоқ! 😊',ar:'عفوا! 😊',pt:'De nada! 😊','pt-BR':'De nada! 😊',sw:'Karibu! 😊'};
+    return th[currentLang]||th.en;
+  }
+  if(/yaratuvchi|creator|kim yaratdi|who (made|created)|кто создал|oluştur|من أنشأ|criador|muundaji/i.test(lower))return P.c;
+  if(/who are you|sen kimsan|kimsan|кто ты|kimsin|what are you|sen kimsin|من أنت|quem (é|e) você|wewe nani/i.test(lower))return P.w;
+  if(/^(hello|hi|hey|salom|привет|merhaba|сәлем|مرحبا|olá|ola|oi|habari|jambo)/i.test(lower))return P.h;
+  if(/rahmat|thank|спасибо|teşekkür|شكرا|obrigad|asante/i.test(lower))return P.t;
+  if(/iq|aql|intelligence|ذكاء|inteligência/i.test(lower)){
+    const iq={uz:'Haqiqiy IQ yo‘q — oddiy yordamchiman.',en:'I have no real IQ score — simple assistant.',ru:'У меня нет реального IQ — простой помощник.',tr:'Gerçek bir IQ skorım yok — basit bir asistanım.',kk:'Нақты IQ жоқ — қарапайым көмекшімін.',ar:'ليس لدي معدل ذكاء حقيقي — مساعد بسيط.',pt:'Não tenho QI real — sou um assistente simples.','pt-BR':'Não tenho QI real — sou um assistente simples.',sw:'Sina IQ halisi — msaidizi rahisi.'};
+    return iq[currentLang]||iq.uz;
+  }
+  return P.d(text);
+}
+
+newChatBtn.onclick=startNewChat;
+projectsBtn.onclick=function(){
+  const name=prompt(tUI('proj')+':');
+  if(!name||!name.trim())return;
+  projects.push({name:name.trim(),id:Date.now().toString()});
+  safeSetProjects(projects);renderProjects();
+};
+const mathChev=document.getElementById('mathChev'),codeChev=document.getElementById('codeChev');
+function toggleSub(menu,chev,other,otherChev){
+  const isOpen=menu.style.display==='block';
+  menu.style.display=isOpen?'none':'block';
+  chev.textContent=isOpen?'▾':'▴';
+  other.style.display='none';otherChev.textContent='▾';
+}
+mathBtn.onclick=function(){toggleSub(mathSubmenu,mathChev,codeSubmenu,codeChev)};
+codeBtn.onclick=function(){toggleSub(codeSubmenu,codeChev,mathSubmenu,mathChev)};
+codeSubmenu.querySelectorAll('.sub-btn').forEach(function(b){
+  b.onclick=function(){
+    if(currentOS===b.dataset.os){
+      currentOS=null;
+      b.classList.remove('active');
+    }else{
+      currentOS=b.dataset.os;
+      codeSubmenu.querySelectorAll('.sub-btn').forEach(function(x){x.classList.remove('active')});
+      b.classList.add('active');
+    }
+  };
+});
+mathSubmenu.querySelectorAll('.sub-btn').forEach(function(b){
+  b.onclick=function(){
+    if(currentMathMode===b.dataset.math){
+      currentMathMode=null;
+      b.classList.remove('active');
+    }else{
+      currentMathMode=b.dataset.math;
+      mathSubmenu.querySelectorAll('.sub-btn').forEach(function(x){x.classList.remove('active')});
+      b.classList.add('active');
+    }
+  };
+});
+uploadBtn.onclick=uploadBtnSide.onclick=function(){fileInput.click()};
+fileInput.onchange=function(e){files=files.concat(Array.from(e.target.files));renderFilePreview();fileInput.value=''};
+searchInput.oninput=function(){renderHistory(searchInput.value)};
+userInput.addEventListener('input',function(){userInput.style.height='auto';userInput.style.height=Math.min(userInput.scrollHeight,140)+'px'});
+userInput.addEventListener('keydown',function(e){if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage()}});
+sendBtn.onclick=sendMessage;
+function renderFilePreview(){filePreview.innerHTML='';files.forEach(function(f,i){const c=document.createElement('div');c.className='file-chip';c.innerHTML='<span>'+(f.name.length>16?f.name.slice(0,14)+'…':f.name)+'</span><button onclick="removeFile('+i+')">×</button>';filePreview.appendChild(c)})}
+window.removeFile=function(i){files.splice(i,1);renderFilePreview()};
+async function sendMessage(){
+  if(window.__akromBusy)return;
+  const text=userInput.value.trim();
+  if(!text&&!files.length)return;
+  window.__akromBusy=true;
+  if(sendBtn)sendBtn.disabled=true;
+  try{
+    let display=text?escapeHtml(text):'';
+    if(files.length)display+=(text?'<br>':'')+files.map(function(f){return '📎 '+f.name}).join('<br>');
+    addMessage(display||'📎',true);
+    addToHistory(text||'File');
+    userInput.value='';userInput.style.height='auto';
+    const attached=files.slice();files=[];renderFilePreview();
+    await showThinking(1);
+    if(attached.length){
+      addMessage('📎 '+attached.map(function(f){return f.name}).join(', '),false);
+    }else{
+      var reply='';
+      try{
+        reply=getQuickFacts(text)||trySolveMath(text)||getOSCodeReply(text)||getCodeReply(text)||kbLookup(text)||generateReply(text)||'…';
+      }catch(e){
+        reply='Error: '+String(e.message||e);
+      }
+      addMessage(reply,false);
+    }
+  }catch(err){
+    try{addMessage('Error: '+escapeHtml(String(err.message||err)),false)}catch(e){}
+  }finally{
+    window.__akromBusy=false;
+    if(sendBtn)sendBtn.disabled=false;
+  }
+}
+
+
+(function initSidebarUI(){
+  const sidebar=document.getElementById('sidebar');
+  const collapseBtn=document.getElementById('collapseBtn');
+  const voiceMale=document.getElementById('voiceMale');
+  const voiceAra=document.getElementById('voiceAra');
+  function syncVoiceUI(){
+    if(voiceMale)voiceMale.classList.toggle('active',voiceGender==='male');
+    if(voiceAra)voiceAra.classList.toggle('active',voiceGender==='ara');
+  }
+  if(voiceGender==='female')voiceGender='ara';
+  syncVoiceUI();
+  if(voiceMale)voiceMale.onclick=function(){voiceGender='male';safeSet('akrom_voice','male');syncVoiceUI()};
+  if(voiceAra)voiceAra.onclick=function(){voiceGender='ara';safeSet('akrom_voice','ara');syncVoiceUI()};
+  if(collapseBtn&&sidebar){
+    function syncCollapse(){
+      sidebar.classList.toggle('collapsed',sidebarCollapsed);
+      if(sidebarCollapsed){
+        collapseBtn.textContent='»';
+        collapseBtn.classList.add('floating');
+        collapseBtn.title='Open menu';
+        // move button to body so it stays visible when sidebar width=0
+        if(collapseBtn.parentElement!==document.body)document.body.appendChild(collapseBtn);
+      }else{
+        collapseBtn.textContent='«';
+        collapseBtn.classList.remove('floating');
+        collapseBtn.title='Close menu';
+        if(sidebar && collapseBtn.parentElement!==sidebar)sidebar.insertBefore(collapseBtn,sidebar.firstChild);
+      }
+    }
+    collapseBtn.onclick=function(){
+      sidebarCollapsed=!sidebarCollapsed;
+      syncCollapse();
+    };
+    syncCollapse();
+  }
+})();
+
+
+applyLang();startNewChat();
+</script>
+</body>
+</html>
